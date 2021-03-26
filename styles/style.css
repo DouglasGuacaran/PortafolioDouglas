@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Indie Flower', cursive;
+}
+body {
+    background: #FFFFFA;
+}
+body main {
+    width: 100%;
+}
+body nav ul li a {
+    width: 100%;
+    margin: 0 auto;
+    color: aliceblue;
+    background-color:gray;
+    text-decoration:none;
+}
+body main footer div ul li a{
+    text-decoration:none;
+}
+header{
+    width: 100%;
+    color: aliceblue;
+    background-color: #024959;
+}
+body nav{
+background-color:#024959;
+}
+
+body nav div ul li a {
+
+    color:#fff;
+    padding: 5px;
+    display: block;
+}
+body nav ul li a:hover{
+    background: #037E8C;
+}
+body nav ul li span {
+    margin-right: 4px;
+}
+nav {
+    background-color: white;
+    padding: 10px;
+    width: 100%;
+}
+nav ul { /* centrar haz click para conocerme*/
+    text-align: center;
+}
+
+.imagen{
+    width: 75vw;
+}
+.titulo__bienvenida{
+    font-size: 250%;
+    width: 100%;
+    text-align: center;
+    }
+.titulo{
+    display: flex;
+    justify-content:center;
+    text-align: center;
+    font-size: 250%;
+    width: 100%;
+}
+.titulo__nombre{
+    width: 1300px;
+    text-align: center;
+}
+.titulo__logoupel{
+    width: 35%;
+}
+.navegacion__elemento--menu{
+    display: flex;
+    justify-content:center;
+}
+section { 
+    background-color: #ff6600;
+    color: black;
+    text-align: center;
+    padding: 15px;
+    width: 100%;
+    margin: 0 auto;
+}
+form {
+    text-align: center;
+}
+
+nav ul li {
+    list-style: none;
+    color:#fff;
+    display: block;
+    text-decoration: none;
+}
+nav ul li span {
+    margin-right: 5px;
+}
+
+.form-control{
+    width: 50%;
+    justify-content:center;    
+    text-align: center;
+    align-items: center;
+}
+
+footer {
+    background-color: deepskyblue;
+    text-decoration:none;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+}
+body main footer div ul li a span{
+    margin-right: 4px;
+}
+
+input,select,textarea,label {
+    justify-content: center;    
+    text-align: center;
+}
+@media(max-width: 320px) {
+    .titulo{
+        width: 88%;
+        font-size: 120%;
+    }
+    .titulo__logoupel{
+        width: 100%;
+        justify-content: center;
+    }
+    body nav div ul li a{
+        width: 115px;
+    }
+    .titulo__bienvenida{
+        font-size: 250%;    
+    }
+    .navegacion__elemento--menu{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .container {
+        display: flex;
+        flex-direction: column;   
+    }
+}
+@media (min-width: 321px) and (max-width: 767px) {
+    .titulo{
+        width: 90%;
+        font-size: 170%;
+    }
+    .titulo__logoupel{
+        width: 60%;
+    }
+    .titulo__bienvenida{
+    font-size: 175%;    
+    }
+    body nav div ul li a{
+        width: 115px;
+    }
+
+    .navegacion__elemento--menu{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;    
+    }
+}
