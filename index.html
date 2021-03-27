@@ -9,11 +9,9 @@
     <title>Douglas Guacarán</title>
     <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./assets/fonts/fonts.css">
-    <link rel="stylesheet" href="./styles/style.css"/>
+    <link rel="stylesheet" href="./assets/css/main.css"/>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -82,38 +80,40 @@
             </div>
         </section>
         <section>
-            <form method="POST" action="https://formspree.io/f/xaylrlyl">
-            <h2 id="contact">Contáctame</h2>
-            <br>
-            <label for="nameOfUser">Déjame tu nombre <input type="text" name="nombre" id="nameOfUser"
-                    placeholder="Su nombre y apellido"required></label>
-            <br>
-            <label for="status">¿Cómo te gustaria recibir la respuesta? 
-                <select name="state" id="status">
-                    <option value="call">Llamada telefónica</option>
-                    <option value="mail">Correo Electrónico</option>
-                    <option value="wApp">Mensaje a WhatsApp</option>
-                </select>
-            </label>
-            <br>
-            <label for="correo">Ingrese su correo electrónico <input type="email" name="contacto" id="correo"
-                placeholder="e-mail" required></label>
-            <br>
-            <label for="telefono">Ingresa un número telefónico de contacto <input type="phone" name="phone" id="telefono"
-                    placeholder="ej. +56987654321" required></label>
-            <br>
-            <label for="fecha">Fecha de contacto preferida <input type="date" name="nacio" id="fecha"
-                    placeholder="fecha de contacto" required></label>
-            <br>
-            <div class="input-group">
-                <span class="input-group-text">Ingrese aquí su consulta:</span>
+            <div>
+                <form method="POST" action="https://formspree.io/f/xaylrlyl">
+                <h2 id="contact">Contáctame</h2>
                 <br>
-                <textarea class="form-control" aria-label="With textarea" placeholder="Breve descripción de su solicitud"
-                    required></textarea>
+                <label for="nameOfUser">Déjame tu nombre <input type="text" name="nombre" id="nameOfUser"
+                        placeholder="Su nombre y apellido"required></label>
+                <br>
+                <label for="status">¿Cómo te gustaria recibir la respuesta? 
+                    <select name="state" id="status">
+                        <option value="call">Llamada telefónica</option>
+                        <option value="mail">Correo Electrónico</option>
+                        <option value="wApp">Mensaje a WhatsApp</option>
+                    </select>
+                </label>
+                <br>
+                <label for="correo">Ingrese su correo electrónico <input type="email" name="contacto" id="correo"
+                    placeholder="e-mail" required></label>
+                <br>
+                <label for="telefono">Ingresa un número telefónico de contacto <input type="phone" name="phone" id="telefono"
+                        placeholder="ej. +56987654321" required></label>
+                <br>
+                <label for="fecha">Fecha de contacto preferida <input type="date" name="nacio" id="fecha"
+                        placeholder="fecha de contacto" required></label>
+                <br>
+                <div class="input-group">
+                    <span class="input-group-text">Ingrese aquí su consulta:</span>
+                    <br>
+                    <textarea class="form-control" aria-label="With textarea" placeholder="Breve descripción de su solicitud"
+                        required></textarea>
+                </div>
+                <br>
+                <input type="submit">
+                </form>
             </div>
-            <br>
-            <input type="submit">
-            </form>
         </section>
         <footer>
             <div>
