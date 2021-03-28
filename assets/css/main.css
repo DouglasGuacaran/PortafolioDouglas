@@ -1,11 +1,8 @@
 * {
   margin: 0;
   padding: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   font-family: 'Indie Flower', cursive;
 }
 
@@ -37,7 +34,8 @@ body nav div ul li a {
 
 body nav ul {
   /* Haz click para conocerme*/
-  width: 20%;
+  width: 100%;
+  /* menu contenedor*/
   margin: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -74,7 +72,7 @@ body nav ul li span {
   margin-right: 5px;
 }
 
-body .titulo {
+body .title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -86,27 +84,24 @@ body .titulo {
   width: 100%;
 }
 
-body .titulo__nombre {
-  width: 1300px;
-  text-align: center;
+body .title__name {
+  width: 95%;
 }
 
-body .titulo__logoupel {
-  width: 35%;
+body .title__logo {
+  width: 5vw;
 }
 
-body .navegacion {
-  background-color: #024959;
-  padding: 10px;
-  width: 100%;
-}
-
-body .navegacion__barnav__elemento {
+body .navegation {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #024959;
+  padding: 10px;
+  width: 100%;
 }
 
 body main {
@@ -153,7 +148,7 @@ body input, body select, body textarea, body label {
   text-align: center;
 }
 
-body .titulo__bienvenida {
+body .title__welcome {
   font-size: 250%;
   width: 100%;
   text-align: center;
@@ -170,9 +165,22 @@ body .form-control {
           align-items: center;
 }
 
-body .imagen {
-  margin: 0 auto;
-  width: 75vw;
+body .image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: center;
+          flex-direction: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+
+body .image_size {
+  width: 75%;
 }
 
 body .container {
