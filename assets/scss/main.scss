@@ -12,30 +12,45 @@ body {
         background-color: #024959;
     }
     nav{
+        background-color:#024959;
+        color:white;
+        padding: 10px;	
+        width: 100%;
         div{
             ul{
                 text-align: center;
-                li {
+                li{
+                    a{
+                        color:white;
+                        padding: 5px;
+                        display: block;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+        ul{
+            text-align: center;
+            li {
                 list-style: none;
                 color:#fff;
                 display: block;                        text-decoration: none;
-                    a {
-                        width: 100%;
-                        margin: 0 auto;
-                        color:#fff;
-                        background-color:gray;
-                        text-decoration:none;
-                        padding: 5px;
-                        display: block;
-                        span {
-                            margin-right: 5px;
-                        }
-                    }
+                a {
                     a:hover{
-                    background: #037E8C;
-                    }       
-                }                 
-            }
+                        background: #037E8C;
+                        }  
+                    width: 100%;
+                    margin: 0 auto;
+                    color:aliceblue;
+                    background-color:gray;
+                    text-decoration:none;
+                    padding: 5px;
+                    display: block;
+                }
+                span {
+                    margin-right: 5px;
+                }    
+            }                 
         }
     }
     .titulo{
@@ -64,14 +79,17 @@ body {
     main {
         width: 100%;
         section { 
+            width: 100%;
             background-color: #ff6600;
             color: black;
             text-align: center;
             padding: 15px;
-            width: 100%;
             margin: 0 auto;
-            form {
+            div{
                 text-align: center;
+                form {
+                    text-align: center;
+                }
             }
         }
     }       
@@ -81,10 +99,16 @@ body {
         padding: 10px;
         text-align: center;
         width: 100%;
-        div ul li a {
-            text-decoration:none;
-            span{
-            margin-right: 4px;
+        div{
+            ul{
+                li{
+                    a{
+                        text-decoration:none;
+                        span{
+                            margin-right: 4px;
+                        }
+                    }
+                }
             }
         }
     }
@@ -98,16 +122,18 @@ body {
         text-align: center;
     }
     .form-control{
-        width: 50%;
+        width: 70%;
         justify-content:center;    
         text-align: center;
         align-items: center;
     }
     .imagen {
+        margin: 0 auto;
         width: 75vw;
     }
     .container {
         display: flex;
+        flex-direction: row;
         justify-content: space-around;   
     }
 }

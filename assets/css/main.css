@@ -16,33 +16,43 @@ body header {
   background-color: #024959;
 }
 
-body nav div ul {
+body nav {
+  background-color: #024959;
+}
+
+body nav div ul li a {
+  color: #fff;
+  padding: 5px;
+  display: block;
+}
+
+body nav ul {
   text-align: center;
 }
 
-body nav div ul li {
+body nav ul li {
   list-style: none;
   color: #fff;
   display: block;
   text-decoration: none;
 }
 
-body nav div ul li a {
+body nav ul li a {
   width: 100%;
   margin: 0 auto;
-  color: #fff;
+  color: aliceblue;
   background-color: gray;
   text-decoration: none;
   padding: 5px;
   display: block;
 }
 
-body nav div ul li a span {
-  margin-right: 5px;
+body nav ul li a a:hover {
+  background: #037E8C;
 }
 
-body nav div ul li a:hover {
-  background: #037E8C;
+body nav ul li a span {
+  margin-right: 4px;
 }
 
 body .titulo {
@@ -85,12 +95,11 @@ body main {
 }
 
 body main section {
+  width: 100%;
   background-color: #ff6600;
   color: black;
   text-align: center;
   padding: 15px;
-  width: 100%;
-  margin: 0 auto;
 }
 
 body main section form {
@@ -111,6 +120,22 @@ body footer div ul li a {
 
 body footer div ul li a span {
   margin-right: 4px;
+}
+
+body nav {
+  background-color: #024959;
+  color: white;
+  padding: 10px;
+  width: 100%;
+}
+
+body nav ul {
+  text-align: center;
+}
+
+body nav ul li a {
+  text-decoration: none;
+  color: white;
 }
 
 body input, body select, body textarea, body label {
@@ -138,13 +163,26 @@ body .form-control {
 }
 
 body .imagen {
-  width: 75vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 body .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -ms-flex-pack: distribute;
       justify-content: space-around;
 }
