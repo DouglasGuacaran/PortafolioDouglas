@@ -1,7 +1,8 @@
 * {
 margin: 0;
 padding: 0;
-box-sizing: border-box;
+display: flex;
+flex-wrap: wrap;
 font-family: 'Indie Flower', cursive;
 }
 body {
@@ -23,33 +24,35 @@ body {
                     a{
                         color:white;
                         padding: 5px;
-                        display: block;
-                        text-decoration: none;
                     }
                 }
             }
         }
-        ul{
+        ul{ /* Haz click para conocerme*/
+            width: 20%;
+            margin: 0;
+            display:flex;
             text-align: center;
+            align-items: center;
+            justify-content: center;
             li {
                 list-style: none;
                 color:#fff;
-                display: block;                        text-decoration: none;
+                text-decoration: none;
+                a:hover{
+                    background: #037E8C;
+                }
                 a {
-                    a:hover{
-                        background: #037E8C;
-                        }  
                     width: 100%;
                     margin: 0 auto;
                     color:aliceblue;
                     background-color:gray;
                     text-decoration:none;
                     padding: 5px;
-                    display: block;
                 }
                 span {
                     margin-right: 5px;
-                }    
+                } 
             }                 
         }
     }

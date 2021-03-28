@@ -1,8 +1,11 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   font-family: 'Indie Flower', cursive;
 }
 
@@ -18,23 +21,44 @@ body header {
 
 body nav {
   background-color: #024959;
+  color: white;
+  padding: 10px;
+  width: 100%;
+}
+
+body nav div ul {
+  text-align: center;
 }
 
 body nav div ul li a {
-  color: #fff;
+  color: white;
   padding: 5px;
-  display: block;
 }
 
 body nav ul {
+  /* Haz click para conocerme*/
+  width: 20%;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 body nav ul li {
   list-style: none;
   color: #fff;
-  display: block;
   text-decoration: none;
+}
+
+body nav ul li a:hover {
+  background: #037E8C;
 }
 
 body nav ul li a {
@@ -44,15 +68,10 @@ body nav ul li a {
   background-color: gray;
   text-decoration: none;
   padding: 5px;
-  display: block;
 }
 
-body nav ul li a a:hover {
-  background: #037E8C;
-}
-
-body nav ul li a span {
-  margin-right: 4px;
+body nav ul li span {
+  margin-right: 5px;
 }
 
 body .titulo {
@@ -100,9 +119,14 @@ body main section {
   color: black;
   text-align: center;
   padding: 15px;
+  margin: 0 auto;
 }
 
-body main section form {
+body main section div {
+  text-align: center;
+}
+
+body main section div form {
   text-align: center;
 }
 
@@ -122,22 +146,6 @@ body footer div ul li a span {
   margin-right: 4px;
 }
 
-body nav {
-  background-color: #024959;
-  color: white;
-  padding: 10px;
-  width: 100%;
-}
-
-body nav ul {
-  text-align: center;
-}
-
-body nav ul li a {
-  text-decoration: none;
-  color: white;
-}
-
 body input, body select, body textarea, body label {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -152,7 +160,7 @@ body .titulo__bienvenida {
 }
 
 body .form-control {
-  width: 50%;
+  width: 70%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -163,16 +171,8 @@ body .form-control {
 }
 
 body .imagen {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  margin: 0 auto;
+  width: 75vw;
 }
 
 body .container {
