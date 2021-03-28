@@ -4,18 +4,20 @@ padding: 0;
 box-sizing: border-box;
 font-family: 'Indie Flower', cursive;
 }
+
+$fontsize: 22px;
+$width-max: 100%;
 body {
-    background: #FFFFFA;
+    background:url(../images/fondo1.png);
     header{
-        width: 100%;
+        width: $width-max;
         color: aliceblue;
-        background-color: #024959;
+        font-size: $fontsize;
     }
     nav{
-        background-color:#024959;
-        color:white;
+        color:rgb(99, 7, 99);
         padding: 10px;	
-        width: 100%;
+        width: $width-max;
         div{
             ul{
                 text-align: center;
@@ -28,7 +30,7 @@ body {
             }
         }
         ul{ /* Haz click para conocerme*/
-            width: 100%;/* menu contenedor*/
+            width: $width-max;/* menu contenedor*/
             margin: 0;
             display:flex;
             text-align: center;
@@ -39,13 +41,13 @@ body {
                 color:#fff;
                 text-decoration: none;
                 a:hover{
-                    background: #037E8C;
+                    background: #c157ba;
                 }
                 a {
-                    width: 100%;
+                    width: $width-max;
                     margin: 0 auto;
                     color:aliceblue;
-                    background-color:gray;
+                    background-color:#d623cb;
                     text-decoration:none;
                     padding: 5px;
                 }
@@ -60,7 +62,7 @@ body {
         justify-content:center;
         text-align: center; 
         font-size: 250%;
-        width: 100%;
+        width: $width-max;
     }
     .title__name{
         width: 95%;
@@ -71,16 +73,14 @@ body {
     .navegation{
         display: flex;
         justify-content: center;
-        background-color:#024959;
         padding: 10px;
-        width: 100%;
+        width: $width-max;
     }
     main {
         width: 100%;
         section { 
-            width: 100%;
-            background-color: #ff6600;
-            color: black;
+            width: $width-max;
+            color: #00d5ff;
             text-align: center;
             padding: 15px;
             margin: 0 auto;
@@ -93,11 +93,10 @@ body {
         }
     }       
     footer {
-        background-color: deepskyblue;
         text-decoration:none;
         padding: 10px;
         text-align: center;
-        width: 100%;
+        width: $width-max;
         div{
             ul{
                 li{
@@ -117,11 +116,11 @@ body {
     }
     .title__welcome {
         font-size: 250%;
-        width: 100%;
+        width: $width-max;
         text-align: center;
     }
     .form-control {
-        width: 70%;
+        width: 40%;
         justify-content:center;    
         text-align: center;
         align-items: center;

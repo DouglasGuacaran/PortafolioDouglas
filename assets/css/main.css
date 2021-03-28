@@ -7,18 +7,17 @@
 }
 
 body {
-  background: #FFFFFA;
+  background: url(../images/fondo1.png);
 }
 
 body header {
   width: 100%;
   color: aliceblue;
-  background-color: #024959;
+  font-size: 22px;
 }
 
 body nav {
-  background-color: #024959;
-  color: white;
+  color: #630763;
   padding: 10px;
   width: 100%;
 }
@@ -56,14 +55,14 @@ body nav ul li {
 }
 
 body nav ul li a:hover {
-  background: #037E8C;
+  background: #c157ba;
 }
 
 body nav ul li a {
   width: 100%;
   margin: 0 auto;
   color: aliceblue;
-  background-color: gray;
+  background-color: #d623cb;
   text-decoration: none;
   padding: 5px;
 }
@@ -99,7 +98,6 @@ body .navegation {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: #024959;
   padding: 10px;
   width: 100%;
 }
@@ -110,8 +108,7 @@ body main {
 
 body main section {
   width: 100%;
-  background-color: #ff6600;
-  color: black;
+  color: #00d5ff;
   text-align: center;
   padding: 15px;
   margin: 0 auto;
@@ -126,7 +123,6 @@ body main section div form {
 }
 
 body footer {
-  background-color: deepskyblue;
   text-decoration: none;
   padding: 10px;
   text-align: center;
@@ -155,7 +151,7 @@ body .title__welcome {
 }
 
 body .form-control {
-  width: 70%;
+  width: 40%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
