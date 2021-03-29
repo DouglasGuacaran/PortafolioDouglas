@@ -1,14 +1,15 @@
+
+$fontsize: 20px;
+$width-max: 100%;
 * {
 margin: 0;
 padding: 0;
 box-sizing: border-box;
 font-family: 'Indie Flower', cursive;
 }
-
-$fontsize: 22px;
-$width-max: 100%;
 body {
     background:url(../images/fondo1.png);
+    font-size: $fontsize;
     header{
         width: $width-max;
         color: aliceblue;
@@ -80,7 +81,7 @@ body {
         width: 100%;
         section { 
             width: $width-max;
-            color: #8cff00;
+            color: #292624;
             text-align: center;
             padding: 15px;
             margin: 0 auto;
