@@ -16,6 +16,7 @@ body {
         font-size: $fontsize;
     }
     nav{
+        font-size: 15px;
         color:#630763;
         padding: 10px;	
         width: $width-max;
@@ -37,6 +38,7 @@ body {
             text-align: center;
             align-items: center;
             justify-content: center;
+            
             li {
                 list-style: none;
                 color:#fff;
@@ -51,6 +53,7 @@ body {
                     background-color:#d623cb;
                     text-decoration:none;
                     padding: 5px;
+                    border-radius: 20px 20px 20px 20px;
                 }
                 span {
                     margin-right: 5px;
@@ -87,6 +90,9 @@ body {
             margin: 0 auto;
             div{
                 text-align: center;
+                img{
+                    border-radius: 40px 40px 40px 40px;
+                }
                 form {
                     text-align: center;
                 }
@@ -112,6 +118,7 @@ body {
         }
     }
     input,select,textarea,label {
+        border-radius: 5px 5px 5px 5px;
         justify-content: center;    
         text-align: center;
     }
@@ -133,6 +140,7 @@ body {
         width: 100%;
     }
     .image_size {
+        border-radius: 20px 20px 20px 20px;
         width: 75%;
     }
     .container {

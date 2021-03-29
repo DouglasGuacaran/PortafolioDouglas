@@ -18,6 +18,7 @@ body header {
 }
 
 body nav {
+  font-size: 15px;
   color: #630763;
   padding: 10px;
   width: 100%;
@@ -66,6 +67,7 @@ body nav ul li a {
   background-color: #d623cb;
   text-decoration: none;
   padding: 5px;
+  border-radius: 20px 20px 20px 20px;
 }
 
 body nav ul li span {
@@ -119,6 +121,10 @@ body main section div {
   text-align: center;
 }
 
+body main section div img {
+  border-radius: 40px 40px 40px 40px;
+}
+
 body main section div form {
   text-align: center;
 }
@@ -139,6 +145,7 @@ body footer div ul li a span {
 }
 
 body input, body select, body textarea, body label {
+  border-radius: 5px 5px 5px 5px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -177,6 +184,7 @@ body .image {
 }
 
 body .image_size {
+  border-radius: 20px 20px 20px 20px;
   width: 75%;
 }
 
