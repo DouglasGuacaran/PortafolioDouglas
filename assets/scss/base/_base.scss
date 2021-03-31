@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    font-family: 'Indie Flower', cursive;
+}
+
+body{
+    background: url(/assets/images/fondo1.png);
+    font-size: $fontsize;
+    main{
+        width: $width-max;
+    }
+}

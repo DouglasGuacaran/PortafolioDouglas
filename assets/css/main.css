@@ -2,42 +2,37 @@
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   font-family: 'Indie Flower', cursive;
 }
 
 body {
-  background: url(../images/fondo1.png);
+  background: url(/assets/images/fondo1.png);
   font-size: 20px;
 }
 
-body header {
+body main {
   width: 100%;
+}
+
+.header {
   color: aliceblue;
-  font-size: 20px;
-}
-
-body nav {
-  font-size: 15px;
-  color: #630763;
-  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  font-size: 250%;
   width: 100%;
 }
 
-body nav div ul {
-  text-align: center;
-}
-
-body nav div ul li a {
-  color: white;
-  padding: 5px;
-}
-
-body nav ul {
+.click__meet {
   /* Haz click para conocerme*/
   width: 100%;
   /* menu contenedor*/
-  margin: 0;
+  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -50,17 +45,10 @@ body nav ul {
           justify-content: center;
 }
 
-body nav ul li {
+.menu__list {
+  text-align: center;
   list-style: none;
-  color: #fff;
   text-decoration: none;
-}
-
-body nav ul li a:hover {
-  background: #c157ba;
-}
-
-body nav ul li a {
   width: 100%;
   margin: 0 auto;
   color: aliceblue;
@@ -70,31 +58,23 @@ body nav ul li a {
   border-radius: 20px 20px 20px 20px;
 }
 
-body nav ul li span {
+.menu__item:hover {
+  background: #c157ba;
+}
+
+.menu__sep {
   margin-right: 5px;
 }
 
-body .title {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  text-align: center;
-  font-size: 250%;
-  width: 100%;
-}
-
-body .title__name {
+.header__name {
   width: 95%;
 }
 
-body .title__logo {
+.title__logo {
   width: 5vw;
 }
 
-body .navegation {
+.navegation {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -105,11 +85,7 @@ body .navegation {
   width: 100%;
 }
 
-body main {
-  width: 100%;
-}
-
-body main section {
+.section {
   width: 100%;
   color: #292624;
   text-align: center;
@@ -117,48 +93,37 @@ body main section {
   margin: 0 auto;
 }
 
-body main section div {
+.menu {
   text-align: center;
 }
 
-body main section div img {
+.menu__item {
   border-radius: 40px 40px 40px 40px;
 }
 
-body main section div form {
+.section-form {
   text-align: center;
 }
 
-body footer {
+.footer {
   text-decoration: none;
   padding: 10px;
   text-align: center;
   width: 100%;
 }
 
-body footer div ul li a {
+.footer__item {
   text-decoration: none;
-}
-
-body footer div ul li a span {
   margin-right: 4px;
 }
 
-body input, body select, body textarea, body label {
-  border-radius: 5px 5px 5px 5px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  text-align: center;
-}
-
-body .title__welcome {
+.title__welcome {
   font-size: 250%;
   width: 100%;
   text-align: center;
 }
 
-body .form-control {
+.form-control {
   width: 40%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -169,7 +134,7 @@ body .form-control {
           align-items: center;
 }
 
-body .image {
+.image {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -183,21 +148,9 @@ body .image {
   width: 100%;
 }
 
-body .image_size {
+.image_size {
   border-radius: 20px 20px 20px 20px;
   width: 75%;
-}
-
-body .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
 }
 
 /*@media(max-width: 320px) {

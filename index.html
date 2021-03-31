@@ -9,15 +9,15 @@
     <title>Douglas Guacarán</title>
     <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./assets/fonts/fonts.css">
-    <link rel="stylesheet" href="./assets/css/main.css"/>
+    <link rel="stylesheet" href="./assets/css/main.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="header">
         <nav>
-            <div class="title">
-                <div class="title__name">
+            <div class="header__title">
+                <div class="header__name">
                     <h1>
                         Soy Douglas Guacarán
                     </h1>
@@ -28,19 +28,19 @@
             </div>
         </nav>
     </header>
-        <nav class='navegation'>
+        <nav class='menu'>
             <div>
-                <ul>
-                    <li><a href="./Bienvenida.html"><span class="icon-home"></span>Inicio</a></li>
-                    <li><a href="#about"><span class="icon-user"></span>Sobre mí</a></li>
-                    <li><a href="#Experience"><span class="icon-user-tie"></span>Experiencia</a></li>
-                    <li><a href="#Publicaciones"><span class="icon-folder-open"></span>Publicaciones</a></li>
-                    <li><a href="#contact"><span class="icon-whatsapp"></span>Contáctame</a></li>
+                <ul class=menu__list>
+                    <li><a class= menu__item href="./Bienvenida.html"><span class="menu__sep"></span>Inicio</a></li>
+                    <li><a class= menu__item href="#about"><span class="menu__sep"></span>Sobre mí</a></li>
+                    <li><a class= menu__item href="#Experience"><span class="menu__sep"></span>Experiencia</a></li>
+                    <li><a class= menu__item href="#Publicaciones"><span class="menu__sep"></span>Publicaciones</a></li>
+                    <li><a class= menu__item href="#contact"><span class="menu__sep"></span>Contáctame</a></li>
                 </ul>
             </div>
         </nav>
     <main>
-        <section>
+        <section class='section'>
             <div>
                 <img src="assets/images/mifoto.jpg" width="170" height="230" alt="Mi foto de perfil">
                 <article>
@@ -50,7 +50,7 @@
                 </article>
             </div>
         </section>
-        <section>
+        <section class='section'>
             <div>
                 <article>
                     <h2 id="Experience">Experiencia Profesional.</h2>
@@ -59,7 +59,7 @@
                 </article>
             </div>
         </section>
-        <section>
+        <section class='section'>
             <div class="container">
                 <a href="#"><img src="assets/images/DSC02620.jpg"  width="200" height="130" alt="foto"></a>
                 <a href="#"><img src="assets/images/Imagen.jpg" width="190" height="130"  alt="foto"></a>
@@ -68,7 +68,7 @@
                 <a href="#"><img src="assets/images/Imagen3.jpg" width="160" height="130"  alt="foto"></a>
             </div>
         </section>
-        <section>            
+        <section class='section'>            
             <div>
                     <h2 id="Publicaciones">Publicaciones</h2>
                     <script>
@@ -79,7 +79,7 @@
                     <input type="button" onclick="alerta()" value="Ir a Publicaciones"> 
             </div>
         </section>
-        <section>
+        <section class='section-form'>
             <div>
                 <form method="POST" action="https://formspree.io/f/xaylrlyl">
                 <h2 id="contact">Contáctame</h2>
@@ -115,12 +115,12 @@
                 </form>
             </div>
         </section>
-        <footer>
+        <footer class='footer'>
             <div>
                 <ul>
-                    <li><a href="https://www.linkedin.com/in/douglas-guacaran"><span class="icon-linkedin"></span>Linkedin </a></li>
-                    <li><a href="https://www.facebook.com/douglasguacaran/"><span class="icon-facebook"></span>Facebook</a></li>
-                    <li><a href="https://www.instagram.com/douglasguacaran/?hl=es-la"><span class="icon-instagram"></span>Instagram</a></li>
+                    <li><a class='footer__item' href="https://www.linkedin.com/in/douglas-guacaran"><span class="icon-linkedin"></span>Linkedin </a></li>
+                    <li><a class='footer__item' href="https://www.facebook.com/douglasguacaran/"><span class="icon-facebook"></span>Facebook</a></li>
+                    <li><a class='footer__item' href="https://www.instagram.com/douglasguacaran/?hl=es-la"><span class="icon-instagram"></span>Instagram</a></li>
                 </ul>
             </div>
         </footer>

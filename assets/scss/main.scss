@@ -1,150 +1,100 @@
-@import 'base/base';
 @import 'utilities/variables';
+@import 'base/base';
+@import 'layout/header';
+@import 'components/container';
+@import 'layout/menu';
 
 
-
-body {
-    
-    font-size: $fontsize;
-    header{
-        width: $width-max;
-        color: aliceblue;
-        font-size: $fontsize;
-    }
-    nav{
-        font-size: 15px;
-        color:#630763;
-        padding: 10px;	
-        width: $width-max;
-        div{
-            ul{
-                text-align: center;
-                li{
-                    a{
-                        color:white;
-                        padding: 5px;
-                    }
-                }
-            }
-        }
-        ul{ /* Haz click para conocerme*/
-            width: $width-max;/* menu contenedor*/
-            margin: 0;
-            display:flex;
-            text-align: center;
-            align-items: center;
-            justify-content: center;
-            
-            li {
-                list-style: none;
-                color:#fff;
-                text-decoration: none;
-                a:hover{
-                    background: #c157ba;
-                }
-                a {
-                    width: $width-max;
-                    margin: 0 auto;
-                    color:aliceblue;
-                    background-color:#d623cb;
-                    text-decoration:none;
-                    padding: 5px;
-                    border-radius: 20px 20px 20px 20px;
-                }
-                span {
-                    margin-right: 5px;
-                } 
-            }                 
-        }
-    }
-    .title {
-        display: flex;
-        justify-content:center;
-        text-align: center; 
-        font-size: 250%;
-        width: $width-max;
-    }
-    .title__name{
-        width: 95%;
-    }
-    .title__logo{
-        width: 5vw;
-    }
-    .navegation{
-        display: flex;
-        justify-content: center;
-        padding: 10px;
-        width: $width-max;
-    }
-    main {
-        width: 100%;
-        section { 
-            width: $width-max;
-            color: #292624;
-            text-align: center;
-            padding: 15px;
-            margin: 0 auto;
-            div{
-                text-align: center;
-                img{
-                    border-radius: 40px 40px 40px 40px;
-                }
-                form {
-                    text-align: center;
-                }
-            }
-        }
-    }       
-    footer {
-        text-decoration:none;
-        padding: 10px;
-        text-align: center;
-        width: $width-max;
-        div{
-            ul{
-                li{
-                    a{
-                        text-decoration:none;
-                        span{
-                            margin-right: 4px;
-                        }
-                    }
-                }
-            }
-        }
-    }
-    input,select,textarea,label {
-        border-radius: 5px 5px 5px 5px;
-        justify-content: center;    
-        text-align: center;
-    }
-    .title__welcome {
-        font-size: 250%;
-        width: $width-max;
-        text-align: center;
-    }
-    .form-control {
-        width: 40%;
-        justify-content:center;    
-        text-align: center;
-        align-items: center;
-    }
-    .image {
-        display: flex;
-        flex-direction: center;
-        justify-content: center;
-        width: 100%;
-    }
-    .image_size {
-        border-radius: 20px 20px 20px 20px;
-        width: 75%;
-    }
-    .container {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;   
-    }
+.click__meet { /* Haz click para conocerme*/
+    width: $width-max;/* menu contenedor*/
+    margin: 0 auto;
+    display:flex;
+    text-align: center;
+    align-items:center;
+    justify-content: center;
 }
+
+.menu__list {
+    text-align: center;
+    list-style: none;
+    text-decoration: none;
+    width: $width-max;
+    margin: 0 auto;
+    color:aliceblue;
+    background-color:#d623cb;
+    text-decoration:none;
+    padding: 5px;
+    border-radius: 20px 20px 20px 20px;
+}
+.menu__item:hover{
+    background: #c157ba;
+    }
+.menu__sep{
+    margin-right: 5px;
+    }                  
+
+.header__name{
+    width: 95%;
+}
+.title__logo{
+    width: 5vw;
+}
+.navegation{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    width: $width-max;
+}
+.section { 
+    width: $width-max;
+    color: #292624;
+    text-align: center;
+    padding: 15px;
+    margin: 0 auto;
+}
+.menu{
+    text-align: center;
+}
+.menu__item {
+    border-radius: 40px 40px 40px 40px;
+}
+.section-form {
+    text-align: center;
+}     
+.footer {
+    text-decoration:none;
+    padding: 10px;
+    text-align: center;
+    width: $width-max;
+}
+.footer__item{
+    text-decoration:none;
+    margin-right: 4px;
+}
+
+.title__welcome {
+    font-size: 250%;
+    width: $width-max;
+    text-align: center;
+}
+.form-control {
+    width: 40%;
+    justify-content:center;    
+    text-align: center;
+    align-items: center;
+}
+.image {
+    display: flex;
+    flex-direction: center;
+    justify-content: center;
+    width: 100%;
+}
+.image_size {
+    border-radius: 20px 20px 20px 20px;
+    width: 75%;
+    }
+
+
 /*@media(max-width: 320px) {
     body nav div ul li a{
         width: 115px;
