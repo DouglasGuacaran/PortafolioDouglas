@@ -1,1 +1,11 @@
-    
+    /*In this section: images*/
+.image {
+    display: flex;
+    flex-direction: center;
+    justify-content: center;
+    width: 100%;
+}
+.image_size {
+    border-radius: 20px 20px 20px 20px;
+    width: 75%;
+}

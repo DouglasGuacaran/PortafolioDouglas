@@ -1,3 +1,6 @@
+/*In this section: variables*/
+/*In this section mixins*/
+/*In this section: base*/
 * {
   margin: 0;
   padding: 0;
@@ -15,17 +18,33 @@ body main {
   width: 100%;
 }
 
-.header {
-  color: aliceblue;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  text-align: center;
-  font-size: 250%;
+/*In this section: container*/
+/*In this section: menu*/
+.menu {
+  font-size: 15px;
+  color: #630763;
+  padding: 10px;
   width: 100%;
+  text-align: center;
+}
+
+.menu__item {
+  text-align: center;
+  list-style: none;
+  text-decoration: none;
+  width: 100%;
+  margin: 0 auto;
+  color: aliceblue;
+  background-color: #d623cb;
+  text-decoration: none;
+  padding: 5px;
+  border-radius: 20px 20px 20px 20px;
+  padding: 5px;
+  /*    border-radius: 40px 40px 40px 40px;*/
+}
+
+.menu__item:hover {
+  background: #c157ba;
 }
 
 .click__meet {
@@ -45,95 +64,15 @@ body main {
           justify-content: center;
 }
 
-.menu__list {
-  text-align: center;
-  list-style: none;
-  text-decoration: none;
-  width: 100%;
-  margin: 0 auto;
-  color: aliceblue;
-  background-color: #d623cb;
-  text-decoration: none;
-  padding: 5px;
-  border-radius: 20px 20px 20px 20px;
-}
-
-.menu__item:hover {
-  background: #c157ba;
+.title__logo {
+  width: 5%;
 }
 
 .menu__sep {
   margin-right: 5px;
 }
 
-.header__name {
-  width: 95%;
-}
-
-.title__logo {
-  width: 5vw;
-}
-
-.navegation {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding: 10px;
-  width: 100%;
-}
-
-.section {
-  width: 100%;
-  color: #292624;
-  text-align: center;
-  padding: 15px;
-  margin: 0 auto;
-}
-
-.menu {
-  text-align: center;
-}
-
-.menu__item {
-  border-radius: 40px 40px 40px 40px;
-}
-
-.section-form {
-  text-align: center;
-}
-
-.footer {
-  text-decoration: none;
-  padding: 10px;
-  text-align: center;
-  width: 100%;
-}
-
-.footer__item {
-  text-decoration: none;
-  margin-right: 4px;
-}
-
-.title__welcome {
-  font-size: 250%;
-  width: 100%;
-  text-align: center;
-}
-
-.form-control {
-  width: 40%;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  text-align: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
+/*In this section: images*/
 .image {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -153,6 +92,88 @@ body main {
   width: 75%;
 }
 
+/*In this section: header*/
+.header {
+  width: 95%;
+  color: aliceblue;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+.header__name {
+  width: 100%;
+  font-size: 250%;
+}
+
+.header__logo {
+  width: 5%;
+}
+
+/*In this section: titles*/
+.title__welcome {
+  font-size: 250%;
+  width: 100%;
+  text-align: center;
+}
+
+/*In this section:section*/
+.section {
+  width: 100%;
+  color: #292624;
+  text-align: center;
+  padding: 15px;
+  margin: 0 auto;
+}
+
+.sectionform {
+  text-align: center;
+}
+
+.section__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+/*In this section:Form*/
+.form-control {
+  width: 40%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/*In this section: footer*/
+.footer {
+  text-decoration: none;
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+}
+
+.footer__item {
+  text-decoration: none;
+  margin-right: 4px;
+}
+
+/*In this section css for another pages*/
+/* In this section theme1*/
+/*In this section bootstrap*/
 /*@media(max-width: 320px) {
     body nav div ul li a{
         width: 115px;

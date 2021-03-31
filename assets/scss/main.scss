@@ -1,98 +1,24 @@
-@import 'utilities/variables';
-@import 'base/base';
-@import 'layout/header';
-@import 'components/container';
-@import 'layout/menu';
+@import'utilities/variables';
+@import'utilities/mixins';
 
+@import'base/base';
 
-.click__meet { /* Haz click para conocerme*/
-    width: $width-max;/* menu contenedor*/
-    margin: 0 auto;
-    display:flex;
-    text-align: center;
-    align-items:center;
-    justify-content: center;
-}
+@import'components/container';
+@import'components/menu';
+@import'components/image';
 
-.menu__list {
-    text-align: center;
-    list-style: none;
-    text-decoration: none;
-    width: $width-max;
-    margin: 0 auto;
-    color:aliceblue;
-    background-color:#d623cb;
-    text-decoration:none;
-    padding: 5px;
-    border-radius: 20px 20px 20px 20px;
-}
-.menu__item:hover{
-    background: #c157ba;
-    }
-.menu__sep{
-    margin-right: 5px;
-    }                  
+@import'layout/header';
+@import'layout/title';
+@import'layout/section';
+@import'layout/form';
+@import'layout/footer';
 
-.header__name{
-    width: 95%;
-}
-.title__logo{
-    width: 5vw;
-}
-.navegation{
-    display: flex;
-    justify-content: center;
-    padding: 10px;
-    width: $width-max;
-}
-.section { 
-    width: $width-max;
-    color: #292624;
-    text-align: center;
-    padding: 15px;
-    margin: 0 auto;
-}
-.menu{
-    text-align: center;
-}
-.menu__item {
-    border-radius: 40px 40px 40px 40px;
-}
-.section-form {
-    text-align: center;
-}     
-.footer {
-    text-decoration:none;
-    padding: 10px;
-    text-align: center;
-    width: $width-max;
-}
-.footer__item{
-    text-decoration:none;
-    margin-right: 4px;
-}
+@import'views/bienvenida';
 
-.title__welcome {
-    font-size: 250%;
-    width: $width-max;
-    text-align: center;
-}
-.form-control {
-    width: 40%;
-    justify-content:center;    
-    text-align: center;
-    align-items: center;
-}
-.image {
-    display: flex;
-    flex-direction: center;
-    justify-content: center;
-    width: 100%;
-}
-.image_size {
-    border-radius: 20px 20px 20px 20px;
-    width: 75%;
-    }
+@import'themes/theme1';
+
+@import'vendors/bootstrap';
+
 
 
 /*@media(max-width: 320px) {

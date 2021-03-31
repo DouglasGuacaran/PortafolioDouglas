@@ -1,0 +1,17 @@
+/*In this section:section*/ 
+.section { 
+    width: $width-max;
+    color: #292624;
+    text-align: center;
+    padding: 15px;
+    margin: 0 auto;
+}
+
+.sectionform {
+    text-align: center;
+}
+.section__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;   
+}

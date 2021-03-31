@@ -1,0 +1,43 @@
+/*In this section: menu*/
+.menu{
+    font-size: 15px;
+    color:#630763;
+    padding: 10px;	
+    width: $width-max;
+    text-align: center;
+}
+.menu__item {
+    text-align: center;
+    list-style: none;
+    text-decoration: none;
+    width: $width-max;
+    margin: 0 auto;
+    color:aliceblue;
+    background-color:#d623cb;
+    text-decoration:none;
+    padding: 5px;
+    border-radius: 20px 20px 20px 20px;
+    padding: 5px;
+/*    border-radius: 40px 40px 40px 40px;*/
+}
+
+.menu__item:hover{
+    background: #c157ba;
+    }
+
+.click__meet { /* Haz click para conocerme*/
+    width: $width-max;/* menu contenedor*/
+    margin: 0 auto;
+    display:flex;
+    text-align: center;
+    align-items:center;
+    justify-content: center;
+}
+
+.title__logo{
+    width: 5%;
+}
+
+.menu__sep{
+    margin-right: 5px;
+    }
