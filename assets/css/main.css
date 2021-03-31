@@ -94,7 +94,7 @@ body main {
 
 /*In this section: header*/
 .header {
-  width: 95%;
+  width: 100%;
   color: aliceblue;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -102,16 +102,33 @@ body main {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  text-align: center;
 }
 
 .header__name {
-  width: 100%;
+  width: 95%;
   font-size: 250%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.header__bloque {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .header__logo {
-  width: 5%;
+  width: 40%;
 }
 
 /*In this section: titles*/

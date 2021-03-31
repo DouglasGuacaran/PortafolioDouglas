@@ -1,15 +1,21 @@
 /*In this section: header*/
 .header {
-    width: 95%;
+    width: 100%;
     color: aliceblue;
     display: flex;
     justify-content: center;
-    text-align: center;
 }
 .header__name {
-    width: 100%;
+    width: 95%;
     font-size: 250%;
+    display: flex;
+    justify-content: flex-end;
+}
+.header__bloque {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 .header__logo{
-    width: 5%;
+    width: 40%;
 }
