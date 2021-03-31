@@ -1,14 +1,10 @@
+@import 'base/base';
+@import 'utilities/variables';
 
-$fontsize: 20px;
-$width-max: 100%;
-* {
-margin: 0;
-padding: 0;
-box-sizing: border-box;
-font-family: 'Indie Flower', cursive;
-}
+
+
 body {
-    background:url(../images/fondo1.png);
+    
     font-size: $fontsize;
     header{
         width: $width-max;
