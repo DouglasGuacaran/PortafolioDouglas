@@ -4,7 +4,8 @@
     color:#630763;
     padding: 10px;
     text-decoration: none;
-    position: fixed;
+    position: relative;
+    top:20px;
 }
 .menu__list {   
     width: 100%;
@@ -13,6 +14,8 @@
     text-decoration: none;
     margin: 0 auto;
     list-style: none;
+    position: fixed;
+    top:120px;
 }
 .menu__item {
     font-size: 15px;

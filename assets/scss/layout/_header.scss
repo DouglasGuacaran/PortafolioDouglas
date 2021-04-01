@@ -4,18 +4,23 @@
     color: aliceblue;
     display: flex;
     justify-content: center;
+    position: relative;
 }
 .header__name {
     width: 100%;
     font-size: 250%;
     display: flex;
     justify-content: center;
+    position: absolute;
 }
 .header__bloque {
-    display: flex;
+    /**display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center;*/
 }
 .header__logo{
-    width: 40%;
+    width: 5%;
+    position: absolute;
+    top: 22px;
+    right: 20px;
 }

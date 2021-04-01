@@ -34,7 +34,8 @@ input, select, textarea, label {
   color: #630763;
   padding: 10px;
   text-decoration: none;
-  position: fixed;
+  position: relative;
+  top: 20px;
 }
 
 .menu__list {
@@ -48,6 +49,8 @@ input, select, textarea, label {
   text-decoration: none;
   margin: 0 auto;
   list-style: none;
+  position: fixed;
+  top: 120px;
 }
 
 .menu__item {
@@ -94,6 +97,8 @@ input, select, textarea, label {
 }
 
 .image__size {
+  position: relative;
+  top: 140px;
   border-radius: 20px 20px 20px 20px;
 }
 
@@ -107,6 +112,7 @@ input, select, textarea, label {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  position: relative;
 }
 
 .header__name {
@@ -118,22 +124,24 @@ input, select, textarea, label {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  position: absolute;
 }
 
 .header__bloque {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  /**display: flex;
+    justify-content: center;
+    align-items: center;*/
 }
 
 .header__logo {
-  width: 40%;
+  width: 5%;
+  position: absolute;
+  top: 22px;
+  right: 20px;
+}
+
+.article {
+  height: 90px;
 }
 
 /*In this section: titles*/
