@@ -20,26 +20,44 @@ body main {
 
 /*In this section: container*/
 /*In this section: menu*/
-.menu {
-  font-size: 15px;
+.menu__bar {
+  width: 100%;
   color: #630763;
   padding: 10px;
+  text-decoration: none;
+}
+
+.menu__list {
   width: 100%;
-  text-align: center;
+  font-size: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-decoration: none;
+  margin: 0 auto;
+  list-style: none;
 }
 
 .menu__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   text-align: center;
-  list-style: none;
-  text-decoration: none;
-  width: 100%;
-  margin: 0 auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 125px;
   color: aliceblue;
   background-color: #d623cb;
   text-decoration: none;
   padding: 5px;
   border-radius: 20px 20px 20px 20px;
-  padding: 5px;
   /*    border-radius: 40px 40px 40px 40px;*/
 }
 
@@ -47,29 +65,8 @@ body main {
   background: #c157ba;
 }
 
-.click__meet {
-  /* Haz click para conocerme*/
-  width: 100%;
-  /* menu contenedor*/
-  margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  text-align: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
 .title__logo {
   width: 5%;
-}
-
-.menu__sep {
-  margin-right: 5px;
 }
 
 /*In this section: images*/
@@ -87,9 +84,8 @@ body main {
   width: 100%;
 }
 
-.image_size {
+.image__size {
   border-radius: 20px 20px 20px 20px;
-  width: 75%;
 }
 
 /*In this section: header*/
@@ -105,23 +101,23 @@ body main {
 }
 
 .header__name {
-  width: 95%;
+  width: 100%;
   font-size: 250%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.header__bloque {
+*.header__bloque {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -188,7 +184,29 @@ body main {
   margin-right: 4px;
 }
 
+.span {
+  margin-right: 5px;
+  text-decoration: none;
+}
+
 /*In this section css for another pages*/
+.click__meet {
+  /* Haz click para conocerme*/
+  width: 100%;
+  /* menu contenedor*/
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 /* In this section theme1*/
 /*In this section bootstrap*/
 /*@media(max-width: 320px) {
