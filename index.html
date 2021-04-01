@@ -82,15 +82,15 @@
                     <input type="button" onclick="alerta()" value="Ir a Publicaciones"> 
             </div>
         </section>
-        <section class='sectionform'>
-            <div>
+        <section >
+            <div class='form_control'>
                 <form method="POST" action="https://formspree.io/f/xaylrlyl">
                 <h2 id="contact">Contáctame</h2>
                 <br>
                 <label for="nameOfUser">Déjame tu nombre <input type="text" name="nombre" id="nameOfUser"
                         placeholder="Su nombre y apellido"required></label>
                 <br>
-                <label for="status">¿Cómo te gustaria recibir la respuesta? 
+                <label for="status">¿Cómo te gustaria recibir respuesta? 
                     <select name="state" id="status">
                         <option value="call">Llamada telefónica</option>
                         <option value="mail">Correo Electrónico</option>
@@ -107,10 +107,10 @@
                 <label for="fecha">Fecha de contacto preferida <input type="date" name="nacio" id="fecha"
                         placeholder="fecha de contacto" required></label>
                 <br>
-                <div class="input-group">
-                    <span class="input-group-text">Ingrese aquí su consulta:</span>
+                <div>
+                    <span>Ingrese aquí su consulta:</span>
                     <br>
-                    <textarea class="form-control" aria-label="With textarea" placeholder="Breve descripción de su solicitud"
+                    <textarea class="description" aria-label="With textarea" placeholder="Breve descripción de su solicitud"
                         required></textarea>
                 </div>
                 <br>

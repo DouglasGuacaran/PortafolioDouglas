@@ -18,6 +18,15 @@ body main {
   width: 100%;
 }
 
+input, select, textarea, label {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  padding: 3px;
+  border-radius: 20px 20px 20px 20px;
+}
+
 /*In this section: container*/
 /*In this section: menu*/
 .menu__bar {
@@ -29,7 +38,6 @@ body main {
 
 .menu__list {
   width: 100%;
-  font-size: 12px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -42,6 +50,7 @@ body main {
 }
 
 .menu__item {
+  font-size: 15px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -58,7 +67,6 @@ body main {
   text-decoration: none;
   padding: 5px;
   border-radius: 20px 20px 20px 20px;
-  /*    border-radius: 40px 40px 40px 40px;*/
 }
 
 .menu__item:hover {
@@ -111,7 +119,7 @@ body main {
           justify-content: center;
 }
 
-*.header__bloque {
+.header__bloque {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -128,12 +136,6 @@ body main {
 }
 
 /*In this section: titles*/
-.title__welcome {
-  font-size: 250%;
-  width: 100%;
-  text-align: center;
-}
-
 /*In this section:section*/
 .section {
   width: 100%;
@@ -160,8 +162,8 @@ body main {
 }
 
 /*In this section:Form*/
-.form-control {
-  width: 40%;
+.form_control {
+  width: 100%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -169,6 +171,11 @@ body main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.description {
+  width: 35%;
+  text-align: center;
 }
 
 /*In this section: footer*/
@@ -190,21 +197,20 @@ body main {
 }
 
 /*In this section css for another pages*/
-.click__meet {
-  /* Haz click para conocerme*/
+.title__welcome {
+  color: #037E8C;
+  font-size: 250%;
   width: 100%;
-  /* menu contenedor*/
-  margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   text-align: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+}
+
+.click__meet {
+  text-align: center;
+}
+
+.footer1 {
+  /* Haz click para conocerme*/
+  text-align: center;
 }
 
 /* In this section theme1*/

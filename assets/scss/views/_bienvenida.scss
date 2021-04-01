@@ -1,9 +1,14 @@
 /*In this section css for another pages*/
-.click__meet { /* Haz click para conocerme*/
-    width: $width-max;/* menu contenedor*/
-    margin: 0 auto;
-    display:flex;
+.title__welcome {
+    color: $color_violeta;
+    font-size: 250%;
+    width: $width-max;
     text-align: center;
-    align-items:center;
-    justify-content: center;
+}
+
+.click__meet{
+    text-align: center;
+}
+.footer1 { /* Haz click para conocerme*/
+    text-align: center;
 }

@@ -1,14 +1,12 @@
 /*In this section: menu*/
 .menu__bar {
     width: $width-max;
-
     color:#630763;
     padding: 10px;
     text-decoration: none;
 }
 .menu__list {   
     width: 100%;
-    font-size: 12px;
     display: flex;
     justify-content: center;
     text-decoration: none;
@@ -16,6 +14,7 @@
     list-style: none;
 }
 .menu__item {
+    font-size: 15px;
     display: flex;
     justify-content: center;
     text-align: center;
@@ -26,7 +25,6 @@
     text-decoration: none;
     padding: 5px;
     border-radius: 20px 20px 20px 20px;
-/*    border-radius: 40px 40px 40px 40px;*/
 }
 .menu__item:hover{
     background: #c157ba;
