@@ -50,7 +50,7 @@ input, select, textarea, label {
   margin: 0 auto;
   list-style: none;
   position: fixed;
-  top: 120px;
+  top: 100px;
 }
 
 .menu__item {
@@ -124,31 +124,93 @@ input, select, textarea, label {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  position: absolute;
+  position: relative;
 }
 
 .header__bloque {
-  /**display: flex;
-    justify-content: center;
-    align-items: center;*/
+  width: 100px;
+  height: 100px;
 }
 
 .header__logo {
-  width: 5%;
+  width: 60px;
   position: absolute;
   top: 22px;
   right: 20px;
 }
 
+@media (max-width: 600px) {
+  .header {
+    width: 100%;
+    color: aliceblue;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    position: relative;
+  }
+  .header__name {
+    width: 100%;
+    font-size: 80%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    position: relative;
+    top: 25px;
+  }
+  .header__logo {
+    width: 25%;
+    max-width: 40px;
+    position: absolute;
+    top: 25px;
+    right: 20px;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 885px) {
+  .header {
+    width: 100%;
+    color: aliceblue;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    position: relative;
+  }
+  .header__name {
+    width: 100%;
+    font-size: 150%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    position: absolute;
+    top: 25px;
+  }
+}
+
 .article {
-  height: 90px;
+  height: 50px;
+}
+
+#about {
+  height: 10px;
 }
 
 /*In this section: titles*/
 /*In this section:section*/
 .section {
   width: 100%;
-  color: #292624;
+  color: #292428;
   text-align: center;
   padding: 15px;
   margin: 0 auto;

@@ -11,16 +11,56 @@
     font-size: 250%;
     display: flex;
     justify-content: center;
-    position: absolute;
+    position: relative;
 }
 .header__bloque {
-    /**display: flex;
-    justify-content: center;
-    align-items: center;*/
+    width: 100px;
+    height: 100px;
 }
 .header__logo{
-    width: 5%;
+    width: 60px;
     position: absolute;
     top: 22px;
     right: 20px;
+}
+@media(max-width: 600px){
+    .header {
+        width: 100%;
+        color: aliceblue;
+        display: flex;
+        justify-content: center;
+        position: relative;
+    }
+    .header__name {
+        width: 100%;
+        font-size: 80%;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        top:25px;
+    }
+    .header__logo{
+        width: 25%;
+        max-width: 40px;
+        position: absolute;
+        top: 25px;
+        right: 20px;
+    }
+}
+@media(min-width: 601px) and(max-width: 885px){
+    .header {
+        width: 100%;
+        color: aliceblue;
+        display: flex;
+        justify-content: center;
+        position: relative;
+    }
+    .header__name {
+        width: 100%;
+        font-size: 150%;
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        top:25px;
+    }
 }
