@@ -1,21 +1,19 @@
 /*In this section: menu*/
-.menu__bar {
+.menu {
     width: $width-max;
     color:#630763;
-    padding: 10px;
     text-decoration: none;
     position: relative;
-    top:20px;
 }
-.menu__list {   
+.menu__list {
     width: 100%;
     display: flex;
     justify-content: center;
     text-decoration: none;
-    margin: 0 auto;
     list-style: none;
     position: fixed;
-    top:100px;
+    top:0px;
+    z-index: 10;
 }
 .menu__item {
     font-size: 15px;
@@ -34,8 +32,33 @@
     background: #c157ba;
     }
 
-
-
 .title__logo{
     width: 5%;
+}
+
+@media(max-width: 600px){
+.menu__list {   
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    list-style: none;
+    position: sticky;
+    -webkit-position: sticky;
+}
+}
+@media(min-width: 601px) and(max-width: 885px){
+    .menu__list {   
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        list-style: none;
+        position: sticky;
+        -webkit-position: sticky;
+    }
 }

@@ -7,6 +7,11 @@
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   font-family: 'Indie Flower', cursive;
+  box-sizing: border-box;
+}
+
+.container {
+  position: relative;
 }
 
 body {
@@ -29,13 +34,11 @@ input, select, textarea, label {
 
 /*In this section: container*/
 /*In this section: menu*/
-.menu__bar {
+.menu {
   width: 100%;
   color: #630763;
-  padding: 10px;
   text-decoration: none;
   position: relative;
-  top: 20px;
 }
 
 .menu__list {
@@ -47,10 +50,10 @@ input, select, textarea, label {
       -ms-flex-pack: center;
           justify-content: center;
   text-decoration: none;
-  margin: 0 auto;
   list-style: none;
   position: fixed;
-  top: 100px;
+  top: 0px;
+  z-index: 10;
 }
 
 .menu__item {
@@ -81,30 +84,72 @@ input, select, textarea, label {
   width: 5%;
 }
 
+@media (max-width: 600px) {
+  .menu__list {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-decoration: none;
+    list-style: none;
+    position: sticky;
+    -webkit-position: -webkit-sticky;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 885px) {
+  .menu__list {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-decoration: none;
+    list-style: none;
+    position: sticky;
+    -webkit-position: -webkit-sticky;
+  }
+}
+
 /*In this section: images*/
 .image {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: center;
-          flex-direction: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
   width: 100%;
+  height: 350px;
+  z-index: 5;
+  margin: 10px;
+  padding-top: 60px;
 }
 
 .image__size {
-  position: relative;
-  top: 140px;
   border-radius: 20px 20px 20px 20px;
 }
 
 /*In this section: header*/
 .header {
+  padding-bottom: 50px;
   width: 100%;
+  height: 100px;
   color: aliceblue;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -112,7 +157,6 @@ input, select, textarea, label {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  position: relative;
 }
 
 .header__name {
@@ -125,17 +169,15 @@ input, select, textarea, label {
       -ms-flex-pack: center;
           justify-content: center;
   position: relative;
-}
-
-.header__bloque {
-  width: 100px;
-  height: 100px;
+  top: 40px;
+  left: 0px;
+  margin-bottom: 100px;
 }
 
 .header__logo {
   width: 60px;
   position: absolute;
-  top: 22px;
+  top: 60px;
   right: 20px;
 }
 
@@ -198,22 +240,18 @@ input, select, textarea, label {
   }
 }
 
-.article {
-  height: 50px;
-}
-
-#about {
-  height: 10px;
-}
-
 /*In this section: titles*/
 /*In this section:section*/
 .section {
   width: 100%;
   color: #292428;
   text-align: center;
-  padding: 15px;
+  padding: 5px;
   margin: 0 auto;
+}
+
+p {
+  top: 25px;
 }
 
 .sectionform {
@@ -234,6 +272,7 @@ input, select, textarea, label {
 
 /*In this section:Form*/
 .form_control {
+  padding-top: 20px;
   width: 100%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -252,7 +291,8 @@ input, select, textarea, label {
 /*In this section: footer*/
 .footer {
   text-decoration: none;
-  padding: 10px;
+  margin: 5px;
+  padding: 5px;
   text-align: center;
   width: 100%;
 }
@@ -275,8 +315,49 @@ input, select, textarea, label {
   text-align: center;
 }
 
-.click__meet {
+.image-welcome {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.image-welcome__size {
+  border-radius: 20px 20px 20px 20px;
+}
+
+.button__list {
+  margin: 30px 0px 140px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-decoration: none;
+  list-style: none;
+}
+
+.button__element {
+  font-size: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 200px;
+  color: aliceblue;
+  background-color: #d623cb;
+  text-decoration: none;
+  padding: 5px;
+  border-radius: 20px 20px 20px 20px;
 }
 
 .footer1 {
@@ -286,58 +367,4 @@ input, select, textarea, label {
 
 /* In this section theme1*/
 /*In this section bootstrap*/
-/*@media(max-width: 320px) {
-    body nav div ul li a{
-        width: 115px;
-    }
-    .titulo{
-        width: 88%;
-        font-size: 120%;
-    }
-    .titulo__logoupel{
-        width: 100%;
-        justify-content: center;
-    }
-    .titulo__bienvenida{
-        font-size: 250%;    
-    }
-    .navegacion__elemento--menu{
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        justify-content: center;
-    }
-    .container {
-        display: flex;
-        flex-direction: column;   
-    }
-}
-@media (min-width: 321px) and (max-width: 767px) {
-    .titulo{
-        width: 90%;
-        font-size: 170%;
-    }
-    .titulo__logoupel{
-        width: 60%;
-    }
-    .titulo__bienvenida{
-    font-size: 175%;    
-    }
-    body nav div ul li a{
-        width: 115px;
-    }
-
-    .navegacion__elemento--menu{
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        justify-content: center;
-    }
-    .container {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;    
-    }
-}*/
 /*# sourceMappingURL=main.css.map */
