@@ -8,7 +8,8 @@
 }
 
 body{
-    background: url("/assets/images/background.png");
+    background: url('../images/background.png');
+    height: 501px;
     font-size: $fontsize;
     main{
         width: $width-max;
