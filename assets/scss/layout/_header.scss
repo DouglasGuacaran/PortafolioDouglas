@@ -21,7 +21,7 @@
     top: 40px;
     right: 20px;
 }
-@media(min-width: 50px) and (max-width: 279px){
+@media(min-width: 50px) and (max-width: 280px){
     .header {
         width: 100%;
         height: 114px;
@@ -42,12 +42,12 @@
     }
     .header__logo{
         position: absolute;
-        width: 40px;
-        top: 30px;
+        width: 35px;
+        top: 25px;
         right: 20px;
     }
 }
-@media(min-width: 279px) and (max-width: 768px){
+@media(min-width: 280px) and (max-width: 768px){
     .header {
         width: 100%;
         height: 114px;
@@ -57,11 +57,11 @@
     }
     .header__name {
         color: $color_violeta;
-        width: 80%;
+        width: 85%;
         height: 70px;
         font-size: 100%;
-        position: absolute;
-        left: 15px;
+        display: flex;
+        text-align: center;
         z-index: 5;
         padding-top: 50px;
         margin: 0;
