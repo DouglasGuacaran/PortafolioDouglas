@@ -10,7 +10,8 @@
 }
 
 body {
-  background: url("/assets/images/fondo1.png");
+  background: url("../images/background.png");
+  height: 500px;
   font-size: 20px;
 }
 
