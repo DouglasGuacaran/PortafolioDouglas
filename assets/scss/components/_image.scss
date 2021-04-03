@@ -11,3 +11,25 @@
     margin: 0;
     border-radius: 20px 20px 20px 20px;
 }
+@media(min-width: 50px) and(max-width: 768px){
+    .image {
+        width: 100%;
+        margin-left: 25px;    
+        text-align: center;
+    }
+    .image__size1 {
+        margin: 0;
+        border-radius: 20px 20px 20px 20px;
+    }
+}
+@media(min-width: 768px) and(max-width: 1024px){
+    .image {
+        width: 100%;
+        margin-left: 25px;    
+        text-align: center;
+    }
+    .image__size1 {
+        margin: 0;
+        border-radius: 20px 20px 20px 20px;
+    }
+}

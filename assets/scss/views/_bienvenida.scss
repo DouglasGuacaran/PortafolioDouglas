@@ -5,7 +5,6 @@
     width: $width-max;
     text-align: center;
 }
-
 .image-welcome{
     display: flex;
     justify-content: center;
@@ -35,4 +34,21 @@
 }
 .footer1 { /* Haz click para conocerme*/
     text-align: center;
+}
+@media(min-width: 50px) and (max-width: 768px){
+    .title__welcome {
+        color: $color_violeta;
+        font-size: 120%;
+        width: $width-max;
+        text-align: center;
+    }
+    .image-welcome{
+        display: flex;
+        justify-content: center;
+    }
+    .image-welcome__size{
+        width: 250px;
+        height: 150px;
+        border-radius: 20px 20px 20px 20px;
+    }
 }
