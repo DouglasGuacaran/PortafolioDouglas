@@ -9,121 +9,124 @@
     <title>Douglas Guacarán</title>
     <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./assets/fonts/fonts.css">
-    <link rel="stylesheet" href="./styles/style.css"/>
+    <link rel="stylesheet" href="./assets/css/main.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
 </head>
-<body>
-    <header>
-        <nav>
-            <div class="titulo">
-                <div class="titulo__nombre">
-                    <h1>
-                        Soy Douglas Guacarán
-                    </h1>
+    <body>
+        <header>
+            <div class="header">
+                    <div class="header__name">
+                        <h1>
+                            Soy Douglas Guacarán
+                        </h1>
+                    </div>
+                    <div class="header__bloque">
+                        <img class="header__logo" src="assets/images/UPEL.png" alt="logo_Upel"/>
+                    </div>
+            </div>
+        </header>
+            <nav>
+                <div class= "menu">
+                        <ul class= "menu__list">
+                            <li><a class= "menu__item" href="./Bienvenida.html"><span class="icon-home span"></span>Inicio</a></li>
+                            <li><a class= "menu__item" href="#about"><span class="icon-user span"></span>Sobre mí</a></li>
+                            <li><a class= "menu__item" href="#Experience"><span class="icon-user-tie span"></span>Experiencia</a></li>
+                            <li><a class= "menu__item" href="#Publicaciones"><span class="icon-folder-open span"></span>Publicaciones</a></li>
+                            <li><a class= "menu__item" href="#contact"><span class="icon-whatsapp span"></span>Contáctame</a></li>
+                        </ul>
                 </div>
-                <aside>
-                    <img class="titulo__logoupel" src="assets/images/UPEL.png" alt="logo_Upel"/>
-                </aside>
-            </div>
-        </nav>
-    </header>
-        <nav class='navegacion'>
-            <div class='navegacion__barnav'>
-                <ul class='navegacion__elemento--menu' >
-                    <li><a href="./Bienvenida.html"><span class="icon-home"></span>Inicio</a></li>
-                    <li><a href="#about"><span class="icon-user"></span>Sobre mí</a></li>
-                    <li><a href="#Experience"><span class="icon-user-tie"></span>Experiencia</a></li>
-                    <li><a href="#Publicaciones"><span class="icon-folder-open"></span>Publicaciones</a></li>
-                    <li><a href="#contact"><span class="icon-whatsapp"></span>Contáctame</a></li>
-                </ul>
-            </div>
-        </nav>
-    <main>
-        <section>
-            <div>
-                <img src="assets/images/mifoto.jpg" width="170" height="230" alt="Mi foto de perfil">
-                <article>
-                    <h2 id="about">Sobre mí</h2>
-                    <p> Soy una persona con muchas ganas de aprender y compartir mi experiencia, me considero proactivo, siempre en la búsqueda del conocimiento, me apasiona el ajedrez, los video juegos, el cine y las películas de ciencia ficción.
-                    </p>
-                </article>
-            </div>
-        </section>
-        <section>
-            <div>
-                <article>
-                    <h2 id="Experience">Experiencia Profesional.</h2>
-                    <p> Poseo experiencia en Metrología de las radiaciones, Calibración de detectores portátiles de radiación, Protección Radiológica, Control de Calidad y Pruebas de Aceptación de unidades de Radioterapia, Aceleradores Lineales, Co-60 equipos de diagnóstico en imagenología Rx, mamógrafo, tomógrafo, Fluoroscopio, Unidades arco en C, equipos odontológicos, densitómetros óseos, Levantamiento radiométrico de neutrones en Ciclotrón, Cálculos de Blindajes
-                    </p>
-                </article>
-            </div>
-        </section>
-        <section>
-            <div class="container">
-                <a href="#"><img src="assets/images/DSC02620.jpg"  width="200" height="130" alt="foto"></a>
-                <a href="#"><img src="assets/images/Imagen.jpg" width="190" height="130"  alt="foto"></a>
-                <a href="#"><img src="assets/images/Imagen1.jpg" width="180" height="130"  alt="foto"></a>
-                <a href="#"><img src="assets/images/Imagen2.jpg" width="155" height="130"  alt="foto"></a>
-                <a href="#"><img src="assets/images/Imagen3.jpg" width="160" height="130"  alt="foto"></a>
-            </div>
-        </section>
-        <section>            
-            <div>
-                    <h2 id="Publicaciones">Publicaciones</h2>
-                    <script>
-                        function alerta(){
-                        alert("Próximamente mis Publicaciones");
-                        }
-                    </script> 
-                    <input type="button" onclick="alerta()" value="Ir a Publicaciones"> 
-            </div>
-        </section>
-        <section>
-            <form method="POST" action="https://formspree.io/f/xaylrlyl">
-            <h2 id="contact">Contáctame</h2>
-            <br>
-            <label for="nameOfUser">Déjame tu nombre <input type="text" name="nombre" id="nameOfUser"
-                    placeholder="Su nombre y apellido"required></label>
-            <br>
-            <label for="status">¿Cómo te gustaria recibir la respuesta? 
-                <select name="state" id="status">
-                    <option value="call">Llamada telefónica</option>
-                    <option value="mail">Correo Electrónico</option>
-                    <option value="wApp">Mensaje a WhatsApp</option>
-                </select>
-            </label>
-            <br>
-            <label for="correo">Ingrese su correo electrónico <input type="email" name="contacto" id="correo"
-                placeholder="e-mail" required></label>
-            <br>
-            <label for="telefono">Ingresa un número telefónico de contacto <input type="phone" name="phone" id="telefono"
-                    placeholder="ej. +56987654321" required></label>
-            <br>
-            <label for="fecha">Fecha de contacto preferida <input type="date" name="nacio" id="fecha"
-                    placeholder="fecha de contacto" required></label>
-            <br>
-            <div class="input-group">
-                <span class="input-group-text">Ingrese aquí su consulta:</span>
-                <br>
-                <textarea class="form-control" aria-label="With textarea" placeholder="Breve descripción de su solicitud"
-                    required></textarea>
-            </div>
-            <br>
-            <input type="submit">
-            </form>
-        </section>
-        <footer>
-            <div>
-                <ul>
-                    <li><a href="https://www.linkedin.com/in/douglas-guacaran"><span class="icon-linkedin"></span>Linkedin </a></li>
-                    <li><a href="https://www.facebook.com/douglasguacaran/"><span class="icon-facebook"></span>Facebook</a></li>
-                    <li><a href="https://www.instagram.com/douglasguacaran/?hl=es-la"><span class="icon-instagram"></span>Instagram</a></li>
-                </ul>
-            </div>
-        </footer>
-    </main>
-</body>
+            </nav>
+            <main>
+                <nav>
+                    <div class='image'>
+                        <img class="image__size" src="assets/images/mifoto.jpg" width="170" height="230" alt="Mi foto de perfil">
+                    </div>
+                </nav>    
+            <article>
+                <section>
+                    <div class="section1">
+                        <h2 id="about">Acerca de mí</h2>
+                        <br>
+                        <p> Soy una persona con muchas ganas de aprender y compartir mi experiencia, me considero proactivo, siempre en la búsqueda del conocimiento, me apasiona el ajedrez, los video juegos, el cine y las películas de ciencia ficción.
+                        </p>
+                        <br>
+                    </div>
+                </section>
+                <section>
+                    <div class='section2'>
+                        <h2 id="experience">Experiencia Profesional.</h2>
+                        <br>
+                        <p> Poseo experiencia en Metrología de las radiaciones, Calibración de detectores portátiles de radiación, Protección Radiológica, Control de Calidad y Pruebas de Aceptación de unidades de Radioterapia, Aceleradores Lineales, Co-60 equipos de diagnóstico en imagenología Rx, mamógrafo, tomógrafo, Fluoroscopio, Unidades arco en C, equipos odontológicos, densitómetros óseos, Levantamiento radiométrico de neutrones en Ciclotrón, Cálculos de Blindajes
+                        </p>
+                    </div>
+                </section>
+                <section>
+                    <div class="section3">
+                        <a href="#"><img class="image__size1" src="assets/images/DSC02620.jpg"  width="200" height="130" alt="foto"></a>
+                        <a href="#"><img class="image__size1"  src="assets/images/Imagen.jpg" width="190" height="130"  alt="foto"></a>
+                        <a href="#"><img class="image__size1"  src="assets/images/Imagen1.jpg" width="180" height="130"  alt="foto"></a>
+                        <a href="#"><img class="image__size1"  src="assets/images/Imagen2.jpg" width="155" height="130"  alt="foto"></a>
+                        <a href="#"><img class="image__size1"  src="assets/images/Imagen3.jpg" width="160" height="130"  alt="foto"></a>
+                    </div>
+                </section>
+                <section >            
+                    <div class='section4'>
+                        <h2 id="Publicaciones">Publicaciones</h2>
+                        <script>
+                            function alerta(){
+                            alert("Próximamente mis Publicaciones");
+                            }
+                        </script> 
+                        <input type="button" onclick="alerta()" value="Ir a Publicaciones"> 
+                    </div>
+                </section>
+                <section>
+                    <div class='section5'>
+                        <form method="POST" action="https://formspree.io/f/xaylrlyl">
+                        <h2 id="contact">Contáctame</h2>
+                        <br>
+                        <label for="nameOfUser">Déjame tu nombre <input type="text" name="nombre" id="nameOfUser"
+                            placeholder="Su nombre y apellido"required></label>
+                        <br>
+                        <label for="status">¿Cómo te gustaria recibir respuesta? 
+                            <select name="state" id="status">
+                                <option value="call">Llamada telefónica</option>
+                                <option value="mail">Correo Electrónico</option>
+                                <option value="wApp">Mensaje a WhatsApp</option>
+                            </select>
+                        </label>
+                        <br>
+                        <label for="correo">Ingrese su correo electrónico <input type="email" name="contacto" id="correo"
+                            placeholder="e-mail" required></label>
+                        <br>
+                        <label for="telefono">Ingresa un número telefónico de contacto <input type="phone" name="phone" id="telefono"
+                            placeholder="ej. +56987654321" required></label>
+                        <br>
+                        <label for="fecha">Fecha de contacto preferida <input type="date" name="nacio" id="fecha"
+                            placeholder="fecha de contacto" required></label>
+                        <br>
+                        <div>
+                            <span>Ingrese aquí su consulta:</span>
+                            <br>
+                            <textarea class="description" aria-label="With textarea" placeholder="Breve descripción de su solicitud"
+                            required></textarea>
+                        </div>
+                        <br>
+                        <input type="submit">
+                        </form>
+                    </div>
+                </section>
+            </article>
+            <footer >
+                <div class='footer'>
+                    <ul>
+                        <li><a class='footer__item' href="https://www.linkedin.com/in/douglas-guacaran"><span class="icon-linkedin span"></span>Linkedin </a></li>
+                        <li><a class='footer__item' href="https://www.facebook.com/douglasguacaran/"><span class="icon-facebook span"></span>Facebook</a></li>
+                        <li><a class='footer__item' href="https://www.instagram.com/douglasguacaran/?hl=es-la"><span class="icon-instagram span"></span>Instagram</a></li>
+                    </ul>
+                </div>
+            </footer>
+        </main>
+    </body>
 </html>

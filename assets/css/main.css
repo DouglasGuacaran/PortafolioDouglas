@@ -1,0 +1,415 @@
+/*In this section: variables*/
+/*In this section mixins*/
+/*In this section: base*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  font-family: 'Indie Flower', cursive;
+}
+
+body {
+  background: url("/assets/images/fondo1.png");
+  font-size: 20px;
+}
+
+body main {
+  width: 100%;
+}
+
+input, select, textarea, label {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  padding: 3px;
+  border-radius: 20px 20px 20px 20px;
+}
+
+/*In this section: container*/
+.container {
+  position: relative;
+}
+
+/*In this section: menu*/
+.menu {
+  width: 100%;
+  color: #630763;
+  text-decoration: none;
+}
+
+.menu__list {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-decoration: none;
+  list-style: none;
+  position: fixed;
+  top: 10px;
+  z-index: 10;
+}
+
+.menu__item {
+  font-size: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 125px;
+  color: aliceblue;
+  background-color: #d623cb;
+  text-decoration: none;
+  padding: 5px;
+  border-radius: 20px 20px 20px 20px;
+}
+
+.menu__item:hover {
+  background: #c157ba;
+}
+
+.title__logo {
+  width: 5%;
+}
+
+@media (max-width: 600px) {
+  .menu {
+    width: 100%;
+    color: #630763;
+    text-decoration: none;
+  }
+  .menu__list {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-decoration: none;
+    list-style: none;
+    top: 140px;
+    z-index: 10;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 885px) {
+  .menu__list {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-decoration: none;
+    list-style: none;
+    top: 140px;
+    z-index: 10;
+  }
+}
+
+/*In this section: images*/
+.image {
+  width: 100%;
+  text-align: center;
+}
+
+.image__size {
+  margin-top: 10px;
+  border-radius: 20px 20px 20px 20px;
+}
+
+.image__size1 {
+  margin: 0;
+  border-radius: 20px 20px 20px 20px;
+}
+
+/*In this section: header*/
+.header {
+  width: 100%;
+  position: relative;
+}
+
+.header__name {
+  color: #4c2882;
+  width: 100%;
+  height: auto;
+  font-size: 220%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 5;
+  padding-top: 50px;
+}
+
+.header__logo {
+  position: absolute;
+  width: 80px;
+  top: 40px;
+  right: 20px;
+}
+
+@media (max-width: 600px) {
+  .header {
+    width: 100%;
+    color: #4c2882;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    position: relative;
+  }
+  .header__name {
+    width: 100%;
+    font-size: 80%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    position: relative;
+    top: 25px;
+    z-index: 5;
+  }
+  .header__logo {
+    width: 25%;
+    max-width: 40px;
+    position: absolute;
+    top: 25px;
+    right: 20px;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1000px) {
+  .header {
+    width: 100%;
+    color: #4c2882;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .header__name {
+    width: 100%;
+    font-size: 150%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    z-index: 5;
+  }
+}
+
+#about {
+  width: 100%;
+  margin: 5px;
+  color: #4c2882;
+  text-align: center;
+}
+
+#experience {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  width: 100%;
+  margin: 0;
+  color: #4c2882;
+  text-align: center;
+  padding: 5px;
+}
+
+.article {
+  margin: 0;
+}
+
+/*In this section:section*/
+.section1 {
+  width: 100%;
+  color: #292428;
+  text-align: center;
+  margin: 0;
+}
+
+.section2 {
+  width: 100%;
+  color: #292428;
+  text-align: center;
+  margin: 0;
+}
+
+.section3 {
+  width: 100%;
+  color: #292428;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  text-align: center;
+  margin: 0;
+}
+
+.section4 {
+  width: 100%;
+  color: #292428;
+  text-align: center;
+  margin: 0;
+}
+
+.section5 {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+/*In this section:Form*/
+.form_control {
+  padding-top: 20px;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.description {
+  width: 35%;
+  text-align: center;
+}
+
+/*In this section: footer*/
+.footer {
+  text-decoration: none;
+  margin: 5px;
+  padding: 5px;
+  text-align: center;
+  width: 100%;
+}
+
+.footer__item {
+  text-decoration: none;
+  margin-right: 4px;
+}
+
+.span {
+  margin-right: 5px;
+  text-decoration: none;
+}
+
+/*In this section css for another pages*/
+.title__welcome {
+  color: #4c2882;
+  font-size: 250%;
+  width: 100%;
+  text-align: center;
+}
+
+.image-welcome {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.image-welcome__size {
+  border-radius: 20px 20px 20px 20px;
+}
+
+.button__list {
+  margin: 30px 0px 140px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-decoration: none;
+  list-style: none;
+}
+
+.button__element {
+  font-size: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 200px;
+  color: aliceblue;
+  background-color: #d623cb;
+  text-decoration: none;
+  padding: 5px;
+  border-radius: 20px 20px 20px 20px;
+}
+
+.footer1 {
+  /* Haz click para conocerme*/
+  text-align: center;
+}
+
+/* In this section theme1*/
+/*In this section bootstrap*/
+/*# sourceMappingURL=main.css.map */

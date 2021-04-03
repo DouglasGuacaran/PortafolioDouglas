@@ -1,0 +1,23 @@
+/*In this section: base*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    font-family: 'Indie Flower', cursive;
+}
+
+body{
+    background: url("/assets/images/background.png");
+    font-size: $fontsize;
+    main{
+        width: $width-max;
+    }
+}
+
+input, select, textarea, label {
+    justify-content: center;    
+    text-align: center;
+    padding: 3px;
+    border-radius: 20px 20px 20px 20px;
+}

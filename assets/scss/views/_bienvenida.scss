@@ -1,0 +1,38 @@
+/*In this section css for another pages*/
+.title__welcome {
+    color: $color_violeta;
+    font-size: 250%;
+    width: $width-max;
+    text-align: center;
+}
+
+.image-welcome{
+    display: flex;
+    justify-content: center;
+}
+.image-welcome__size{
+    border-radius: 20px 20px 20px 20px;
+}
+.button__list{
+    margin: 30px 0px 140px;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    list-style: none;
+}
+.button__element{
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 200px;
+    color:aliceblue;
+    background-color:#d623cb;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 20px 20px 20px 20px;
+}
+.footer1 { /* Haz click para conocerme*/
+    text-align: center;
+}
