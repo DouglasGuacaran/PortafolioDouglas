@@ -10,7 +10,7 @@
 }
 
 body {
-  background: src= "assets/images/UPEL.png";
+  background: url("/assets/images/fondo1.png");
   font-size: 20px;
 }
 
