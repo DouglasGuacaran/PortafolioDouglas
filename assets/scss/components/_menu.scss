@@ -3,7 +3,6 @@
     width: $width-max;
     color:#630763;
     text-decoration: none;
-    position: relative;
 }
 .menu__list {
     width: 100%;
@@ -12,7 +11,8 @@
     text-decoration: none;
     list-style: none;
     position: fixed;
-    top:0px;
+    top:10px;
+    z-index: 10;
 }
 .menu__item {
     font-size: 15px;
@@ -36,6 +36,11 @@
 }
 
 @media(max-width: 600px){
+    .menu {
+        width: $width-max;
+        color:#630763;
+        text-decoration: none;
+    }    
 .menu__list {   
     width: 100%;
     display: flex;
@@ -44,8 +49,8 @@
     align-items: center;
     text-decoration: none;
     list-style: none;
-    position: sticky;
-    -webkit-position: sticky;
+    top:140px;
+    z-index: 10;
 }
 }
 @media(min-width: 601px) and(max-width: 885px){
@@ -57,7 +62,7 @@
         align-items: center;
         text-decoration: none;
         list-style: none;
-        position: sticky;
-        -webkit-position: sticky;
+        top:140px;
+        z-index: 10;
     }
 }
