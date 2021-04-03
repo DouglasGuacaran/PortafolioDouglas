@@ -1,18 +1,4 @@
 # PortafolioGeneral
- 
-# Grupo 1
-
-Svetlana Blizniakova
-Git-hub: @balin-sv
-https://balin-sv.github.io/page/
-
-Anna Aleinikova
-Git-hub:@anlarus
-https://anlarus.github.io/PortafolioGeneral1/
-
-Jocelyn Navarro
-Git-hub:@jocitanavarro 
-https://jocitanavarro.github.io/PortafolioGeneral2.1/
 
 Douglas Guacaran
 Git-hub: @DouglasGuacaran
