@@ -6,13 +6,50 @@
 }
 .main__image-size {
     margin-top: 10px;
-    border-radius: 20px 20px 20px 20px;
+    border-radius: 20px;
 }
 .image__size1 {
     margin: 0;
-    border-radius: 20px 20px 20px 20px;
+
 }
-@media(min-width: 50px) and(max-width: 768px){
+.aside__img1{
+    margin: 0;
+    width: 100%;
+    max-width: 90%;
+    height: auto;
+    border-radius: 20px;
+    z-index: 5;
+}
+
+.aside__img2{
+    margin: 0;
+    width: 100%;
+    max-width: 90%;
+    height: auto;
+    border-radius: 20px;
+}
+.aside__img3{
+    margin: 0;
+    width: 100%;
+    max-width: 90%;
+    height: auto;
+    border-radius: 20px;
+}
+.aside__img4{
+    margin: 0;
+    width: 100%;
+    max-width: 90%;
+    height: auto;
+    border-radius: 20px;
+}
+.aside__img5{
+    margin: 0;
+    width: 100%;
+    max-width: 90%;
+    height: auto;
+    border-radius: 20px;
+}
+@media (min-width: 50px) and (max-width: 800px){
     .main__image {
         top:25px;
         width: 100%;    
@@ -21,19 +58,44 @@
     .main__image-size {
         margin-top: 10px;
         margin-left: 0px;
-        height: 80px;
-        width: 80px;
-        border-radius: 10px;
-    } 
-}
-@media(min-width: 768px) and(max-width: 1024px){
-    .main__image {
-        top:25px;
-        width: 100%;    
-        text-align: center;
+        max-width: 100%;
+        height: auto;
+        border-radius: 20px;
     }
-    .main__image-size {
-        margin-top: 10px;
-        border-radius: 50px 50px 50px 50px;
-    }   
+    .aside__img1{
+        margin: 10px;
+        width: 95%;
+        max-width: 90%;
+        height: auto;
+        border-radius: 20px;
+    }
+    
+    .aside__img2{
+        margin: 10px;
+        width: 95%;
+        max-width: 90%;
+        height: auto;
+        border-radius: 20px;
+    }
+    .aside__img3{
+        margin: 10px;
+        width: 95%;
+        max-width: 90%;
+        height: auto;
+        border-radius: 20px;
+    }
+    .aside__img4{
+        margin: 10px;
+        width: 95%;
+        max-width: 90%;
+        height: auto;
+        border-radius: 20px;
+    }
+    .aside__img5{
+        margin: 10px;
+        width: 95%;
+        max-width: 90%;
+        height: auto;
+        border-radius: 20px; 
+    }
 }

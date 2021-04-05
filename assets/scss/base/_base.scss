@@ -9,16 +9,14 @@
 
 body{
     background: url('../images/background.png');
-    height: 501px;
     font-size: $fontsize;
-    main{
-        width: $width-max;
-    }
+    width: 100%;
+    height: 1700px;
 }
 
 input, select, textarea, label {
     justify-content: center;    
     text-align: center;
     padding: 3px;
-    border-radius: 20px 20px 20px 20px;
+    border-radius: 20px;
 }

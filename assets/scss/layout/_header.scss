@@ -17,14 +17,15 @@
 }
 .header__logo{
     position: absolute;
-    width: 80px;
+    width: 7%;
+    max-width: 70%;
     top: 40px;
     right: 20px;
 }
-@media(min-width: 50px) and (max-width: 280px){
+@media(min-width: 50px) and (max-width: 600px){
     .header {
         width: 100%;
-        height: 114px;
+        height: auto;
         color: $color_violeta;
         display: flex;
         justify-content: center;
@@ -32,22 +33,21 @@
     .header__name {
         color: $color_violeta;
         width: 80%;
-        height: 70px;
-        font-size: 48%;
-        position: absolute;
+        font-size: 60%;
         left: 15px;
-        z-index: 5;
-        padding-top: 50px;
+        z-index: 10;
         margin: 0;
     }
     .header__logo{
         position: absolute;
-        width: 35px;
+        width: 10%;
+        max-width: 40%;
         top: 25px;
         right: 20px;
+        z-index: 10;
     }
 }
-@media(min-width: 280px) and (max-width: 768px){
+@media(min-width: 600px) and (max-width: 1000px){
     .header {
         width: 100%;
         height: 114px;
@@ -59,7 +59,7 @@
         color: $color_violeta;
         width: 85%;
         height: 70px;
-        font-size: 100%;
+        font-size: 130%;
         display: flex;
         text-align: center;
         z-index: 5;
@@ -68,32 +68,10 @@
     }
     .header__logo{
         position: absolute;
-        width: 40px;
-        top: 30px;
-        right: 20px;
-    }
-}
-@media(min-width:768px) and (max-width: 1024px){
-    .header {
-        width: 100%;
-        position: fixed;
-    }
-    .header__name {
-        color: $color_violeta;
-        width: 100%;
-        height: auto;
-        font-size: 150%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        z-index: 5;
-        padding-top: 30px;
-    }
-    .header__logo{
-        position: absolute;
-        width: 60px;
+        width: 10%;
+        max-width: 60%;
         top: 40px;
         right: 20px;
+        z-index: 10;
     }
 }

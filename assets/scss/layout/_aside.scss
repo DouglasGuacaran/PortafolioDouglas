@@ -1,35 +1,26 @@
 .aside { 
+    background: blanchedalmond;
+    position: relative;
+    top:225px;
+    float: right;
     width:25%;
-    height: 900px;
-    padding-top:200px;
-    margin-bottom: 550px;
-    color: #292428;
+    height: 1240px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     text-align: center;
-}
-@media(min-width: 50px) and(max-width: 768px){
+    z-index: 5;
+}    
+/*@media (max-width: 768px) {
     .aside { 
-    width: $width-max;
-    color: #292428;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction:column;
-    justify-content: space-around;
-    align-items: center;
-    margin: 0;
-    }
-}
-@media(min-width: 768px) and(max-width: 1024px){
-    .aside { 
-    width: $width-max;
-    height: 850px;
+    padding-top: 200px;
+    height: 1000px;
     color: #292428;
     display: flex;
     flex-direction:column;
     justify-content: space-around;
     align-items: center;
     margin: 0;
+    margin-bottom: 550px;
     }
-}
+}*/

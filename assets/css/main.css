@@ -11,12 +11,9 @@
 
 body {
   background: url("../images/background.png");
-  height: 501px;
   font-size: 20px;
-}
-
-body main {
   width: 100%;
+  height: 1700px;
 }
 
 input, select, textarea, label {
@@ -25,7 +22,7 @@ input, select, textarea, label {
           justify-content: center;
   text-align: center;
   padding: 3px;
-  border-radius: 20px 20px 20px 20px;
+  border-radius: 20px;
 }
 
 /*In this section: container*/
@@ -79,32 +76,51 @@ input, select, textarea, label {
   background: #c157ba;
 }
 
-/*@media(min-width:50px) and (max-width: 768px){
-    .menu__list {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        text-decoration: none;
-        list-style: none;
-        position: fixed;
-        top:160px;
-        z-index: 10;
-    }
-    .menu__item {
-        font-size: 8px;
-        display: flex;
-        justify-content: center;
-        text-align: center;
-        align-items: center;
-        width: 65px;
-        color:aliceblue;
-        background-color:#d623cb;
-        text-decoration: none;
-        padding: 5px;
-        border-radius: 20px 20px 20px 20px;
-    }   
-}*/
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 50px) and (max-width: 600px) {
+  .menu__list {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-decoration: none;
+    list-style: none;
+    position: fixed;
+    top: 85px;
+    z-index: 10;
+  }
+  .menu__item {
+    font-size: 0.5rem;
+    margin: 2px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 65px;
+    color: aliceblue;
+    background-color: #d623cb;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 20px 20px 20px 20px;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 1000px) {
   .menu__list {
     width: 100%;
     display: -webkit-box;
@@ -116,7 +132,7 @@ input, select, textarea, label {
     text-decoration: none;
     list-style: none;
     position: fixed;
-    top: 160px;
+    top: 100px;
     z-index: 10;
   }
   .menu__item {
@@ -136,7 +152,7 @@ input, select, textarea, label {
     background-color: #d623cb;
     text-decoration: none;
     padding: 5px;
-    border-radius: 20px 20px 20px 20px;
+    border-radius: 20px;
   }
 }
 
@@ -149,15 +165,55 @@ input, select, textarea, label {
 
 .main__image-size {
   margin-top: 10px;
-  border-radius: 20px 20px 20px 20px;
+  border-radius: 20px;
 }
 
 .image__size1 {
   margin: 0;
-  border-radius: 20px 20px 20px 20px;
 }
 
-@media (min-width: 50px) and (max-width: 768px) {
+.aside__img1 {
+  margin: 0;
+  width: 100%;
+  max-width: 90%;
+  height: auto;
+  border-radius: 20px;
+  z-index: 5;
+}
+
+.aside__img2 {
+  margin: 0;
+  width: 100%;
+  max-width: 90%;
+  height: auto;
+  border-radius: 20px;
+}
+
+.aside__img3 {
+  margin: 0;
+  width: 100%;
+  max-width: 90%;
+  height: auto;
+  border-radius: 20px;
+}
+
+.aside__img4 {
+  margin: 0;
+  width: 100%;
+  max-width: 90%;
+  height: auto;
+  border-radius: 20px;
+}
+
+.aside__img5 {
+  margin: 0;
+  width: 100%;
+  max-width: 90%;
+  height: auto;
+  border-radius: 20px;
+}
+
+@media (min-width: 50px) and (max-width: 800px) {
   .main__image {
     top: 25px;
     width: 100%;
@@ -166,21 +222,44 @@ input, select, textarea, label {
   .main__image-size {
     margin-top: 10px;
     margin-left: 0px;
-    height: 80px;
-    width: 80px;
-    border-radius: 10px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px;
   }
-}
-
-@media (min-width: 768px) and (max-width: 1024px) {
-  .main__image {
-    top: 25px;
-    width: 100%;
-    text-align: center;
+  .aside__img1 {
+    margin: 10px;
+    width: 95%;
+    max-width: 90%;
+    height: auto;
+    border-radius: 20px;
   }
-  .main__image-size {
-    margin-top: 10px;
-    border-radius: 50px 50px 50px 50px;
+  .aside__img2 {
+    margin: 10px;
+    width: 95%;
+    max-width: 90%;
+    height: auto;
+    border-radius: 20px;
+  }
+  .aside__img3 {
+    margin: 10px;
+    width: 95%;
+    max-width: 90%;
+    height: auto;
+    border-radius: 20px;
+  }
+  .aside__img4 {
+    margin: 10px;
+    width: 95%;
+    max-width: 90%;
+    height: auto;
+    border-radius: 20px;
+  }
+  .aside__img5 {
+    margin: 10px;
+    width: 95%;
+    max-width: 90%;
+    height: auto;
+    border-radius: 20px;
   }
 }
 
@@ -214,15 +293,16 @@ input, select, textarea, label {
 
 .header__logo {
   position: absolute;
-  width: 80px;
+  width: 7%;
+  max-width: 70%;
   top: 40px;
   right: 20px;
 }
 
-@media (min-width: 50px) and (max-width: 280px) {
+@media (min-width: 50px) and (max-width: 600px) {
   .header {
     width: 100%;
-    height: 114px;
+    height: auto;
     color: #4c2882;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -234,23 +314,22 @@ input, select, textarea, label {
   .header__name {
     color: #4c2882;
     width: 80%;
-    height: 70px;
-    font-size: 48%;
-    position: absolute;
+    font-size: 60%;
     left: 15px;
-    z-index: 5;
-    padding-top: 50px;
+    z-index: 10;
     margin: 0;
   }
   .header__logo {
     position: absolute;
-    width: 35px;
+    width: 10%;
+    max-width: 40%;
     top: 25px;
     right: 20px;
+    z-index: 10;
   }
 }
 
-@media (min-width: 280px) and (max-width: 768px) {
+@media (min-width: 600px) and (max-width: 1000px) {
   .header {
     width: 100%;
     height: 114px;
@@ -266,7 +345,7 @@ input, select, textarea, label {
     color: #4c2882;
     width: 85%;
     height: 70px;
-    font-size: 100%;
+    font-size: 130%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -277,43 +356,11 @@ input, select, textarea, label {
   }
   .header__logo {
     position: absolute;
-    width: 40px;
-    top: 30px;
-    right: 20px;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 1024px) {
-  .header {
-    width: 100%;
-    position: fixed;
-  }
-  .header__name {
-    color: #4c2882;
-    width: 100%;
-    height: auto;
-    font-size: 150%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    z-index: 5;
-    padding-top: 30px;
-  }
-  .header__logo {
-    position: absolute;
-    width: 60px;
+    width: 10%;
+    max-width: 60%;
     top: 40px;
     right: 20px;
+    z-index: 10;
   }
 }
 
@@ -343,11 +390,13 @@ input, select, textarea, label {
   width: 100%;
   color: #292428;
   text-align: center;
-  margin: 0;
-  padding-left: 20px;
+  margin: 10px;
+  padding: 10px;
 }
 
 .section2 {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   width: 100%;
   color: #292428;
   text-align: center;
@@ -397,31 +446,57 @@ input, select, textarea, label {
 
 /*In this section: footer*/
 .footer {
-  padding: 5px;
-  text-align: center;
+  position: absolute;
+  top: 1500px;
   width: 100%;
+  height: 160px;
+  padding: 0;
+  /*display: flex;
+    justify-content: center;
+    align-self: flex-end;
+    text-align: center;*/
   list-style: none;
 }
 
 .footer__list {
+  width: 100%;
   list-style-type: none;
-  margin-right: 4px;
+  text-align: center;
 }
 
 .footer__item {
   text-decoration: none;
 }
 
+.footer__copyright {
+  color: white;
+  width: 100%;
+  font-size: 15px;
+  padding: 0;
+  margin: 0;
+}
+
 .span {
   margin-right: 5px;
 }
 
+/*@media (min-width: 50px) and(max-width: 900px){
+    .footer {
+        box-sizing: border-box;
+        padding: 200px;
+        margin: 10px;
+        text-align: center;
+        width: $width-max;
+        list-style: none;
+    }
+}*/
 .aside {
+  background: blanchedalmond;
+  position: relative;
+  top: 225px;
+  float: right;
   width: 25%;
-  height: 900px;
-  padding-top: 200px;
-  margin-bottom: 550px;
-  color: #292428;
+  height: 1240px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -429,78 +504,32 @@ input, select, textarea, label {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   text-align: center;
+  z-index: 5;
 }
 
-@media (min-width: 50px) and (max-width: 768px) {
-  .aside {
-    width: 100%;
+/*@media (max-width: 768px) {
+    .aside { 
+    padding-top: 200px;
+    height: 1000px;
     color: #292428;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    flex-direction:column;
+    justify-content: space-around;
+    align-items: center;
     margin: 0;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 1024px) {
-  .aside {
-    width: 100%;
-    height: 850px;
-    color: #292428;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin: 0;
-  }
-}
-
+    margin-bottom: 550px;
+    }
+}*/
 .main {
+  position: absolute;
   width: 75%;
-  padding-top: 200px;
+  top: 0;
+  padding-top: 220px;
   margin: 0;
   float: left;
-}
-
-@media (min-width: 50px) and (max-width: 768px) {
-  .main {
-    width: 100%;
-    padding-top: 200px;
-    margin: 0;
-    text-align: center;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 1024px) {
-  .main {
-    width: 100%;
-    padding-top: 200px;
-    margin: 0;
-    text-align: center;
-  }
 }
 
 /*In this section css for another pages*/
