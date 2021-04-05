@@ -1,0 +1,22 @@
+.main{
+    width: 75%;
+    padding-top: 200px;
+    margin: 0;
+    float: left;
+}
+@media(min-width: 50px) and(max-width: 768px){
+    .main{
+        width: 100%;
+        padding-top: 200px;
+        margin: 0;
+        text-align: center;
+    }
+}
+@media(min-width: 768px) and(max-width: 1024px){
+    .main{
+        width: 100%;
+        padding-top: 200px;
+        margin: 0;
+        text-align: center;
+    }
+}

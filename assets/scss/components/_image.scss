@@ -1,9 +1,10 @@
 /*In this section: images*/
-.image {
+.main__image {
+    top:25px;
     width: 100%;    
     text-align: center;
 }
-.image__size {
+.main__image-size {
     margin-top: 10px;
     border-radius: 20px 20px 20px 20px;
 }
@@ -12,24 +13,27 @@
     border-radius: 20px 20px 20px 20px;
 }
 @media(min-width: 50px) and(max-width: 768px){
-    .image {
-        width: 100%;
-        margin-left: 25px;    
-        text-align: center;
+    .main__image {
+        top:25px;
+        width: 100%;    
+        text-align:center;
     }
-    .image__size1 {
-        margin: 0;
-        border-radius: 20px 20px 20px 20px;
-    }
+    .main__image-size {
+        margin-top: 10px;
+        margin-left: 0px;
+        height: 80px;
+        width: 80px;
+        border-radius: 10px;
+    } 
 }
 @media(min-width: 768px) and(max-width: 1024px){
-    .image {
-        width: 100%;
-        margin-left: 25px;    
+    .main__image {
+        top:25px;
+        width: 100%;    
         text-align: center;
     }
-    .image__size1 {
-        margin: 0;
-        border-radius: 20px 20px 20px 20px;
-    }
+    .main__image-size {
+        margin-top: 10px;
+        border-radius: 50px 50px 50px 50px;
+    }   
 }

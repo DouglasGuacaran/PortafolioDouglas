@@ -1,16 +1,17 @@
 /*In this section: footer*/
 .footer {
-    text-decoration:none;
-    margin: 5px;
     padding: 5px;
     text-align: center;
     width: $width-max;
+    list-style: none;
 }
-.footer__item{
-    text-decoration:none;
+.footer__list{
+    list-style-type: none;
     margin-right: 4px;
 }
+.footer__item{
+    text-decoration: none;
+}
 .span {
-    margin-right: 5px;
-    text-decoration:none;
+    margin-right: 5px;;
 }

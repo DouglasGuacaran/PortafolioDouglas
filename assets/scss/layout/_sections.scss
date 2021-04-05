@@ -1,58 +1,28 @@
 /*In this section:section*/ 
 .section1 { 
     width: $width-max;
-    color: #292428;
+    @include fontstyle(color);
     text-align: center;
     margin: 0;
+    padding-left: 20px;
 }
 .section2 { 
     width: $width-max;
-    color: #292428;
+    @include fontstyle(color);
     text-align: center;
     margin: 0;
+    padding-left: 20px;
 }
-.section3 { 
-    width: $width-max;
-    color: #292428;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+.section3 {
+    box-sizing: border-box;
+    margin: 40px;
+    @include fontstyle(color);
     text-align: center;
-    margin: 0;
 }
-.section4 { 
-    width: $width-max;
-    color: #292428;
-    text-align: center;
-    margin: 0;
-}
-.section5 {
+.section4 {
     text-align: center;
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
-@media(min-width: 50px) and(max-width: 768px){
-    .section3 { 
-    width: $width-max;
-    height: 850px;
-    color: #292428;
-    display: flex;
-    flex-direction:column;
-    justify-content: space-around;
-    align-items: center;
-    margin: 0;
-    }
-}
-@media(min-width: 768px) and(max-width: 1024px){
-    .section3 { 
-    width: $width-max;
-    height: 850px;
-    color: #292428;
-    display: flex;
-    flex-direction:column;
-    justify-content: space-around;
-    align-items: center;
-    margin: 0;
-    }
-}
+
