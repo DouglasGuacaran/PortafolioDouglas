@@ -1,15 +1,12 @@
 .aside {
-    position: absolute;
-    background: cornsilk;
-    top: 200px;
+    padding-top: 230px;
     right: 0;
     width:25%;
-    height: 1185px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     text-align: center;
-    z-index: 2;
+    float: right;
 }    
 /*@media (max-width: 768px) {
     .aside { 
